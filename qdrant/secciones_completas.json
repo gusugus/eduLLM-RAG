@@ -1,0 +1,1314 @@
+[
+  {
+    "codigo": "1.1",
+    "titulo": "1.1 La importancia de la taxonomía y la sistemática",
+    "texto_completo": "Resumen: La sistemática estudia el parentesco y la historia evolutiva de los seres vivos, mientras que la taxonomía se ocupa de describir y nombrar su diversidad.\n\n\n\nOrdenar la inmensa variedad de seres vivos existentes y encontrar las posibles explicaciones de su origen y evolución ha sido un reto para los naturalistas de todas las épocas. La ciencia que estudia el parentesco, las relaciones y la historia evolutiva de los seres vivos se conoce con el nombre de sistemática. Mediante ella, los científicos han podido establecer el origen y la evolución de algunas especies y grupos biológicos con el apoyo de otra disciplina, la taxonomía, que es el campo de la ciencia que se ocupa de describir y nombrar la diversidad de seres vivos que existe en la naturaleza.",
+    "resumen": "La sistemática estudia el parentesco y la historia evolutiva de los seres vivos, mientras que la taxonomía se ocupa de describir y nombrar su diversidad.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "vivo",
+        "sistemática",
+        "parentesco",
+        "historia",
+        "evolutivo",
+        "taxonomía",
+        "diversidad",
+        "origen",
+        "evolución",
+        "ciencia",
+        "inmenso",
+        "variedad",
+        "existente",
+        "posible",
+        "explicación"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Procesos que generan diversidad biológica",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Características distintivas de los seres vivos"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.60127854347229,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "1.2",
+    "titulo": "1.2 Los primeros sistemas de clasificación",
+    "texto_completo": "Resumen: Desde Aristóteles hasta Darwin, los sistemas de clasificación evolucionaron desde criterios simples (plantas/animales, con/sin sangre) hasta la noción de taxones y el reconocimiento del parentesco evolutivo.\n\n\n\nAristóteles, en un comienzo, clasificó a los organismos en dos grupos, las plantas y los animales; luego, dentro de cada grupo estableció criterios de clasificación como animales con y sin sangre, y así estableció otra categoría jerárquica. Años más tarde, el naturalista sueco Carl von Linné o Linneo (1707-1778) propuso un método para clasificar que consistió en organizar a las especies en grupos llamados taxones, integrados por especies similares o relacionadas. Luego, Charles Darwin (1809-1882) publicó El origen de las especies, donde planteó que todos los organismos están emparentados por un ancestro común, lo que llevó a reconocer que las categorías reflejan el parentesco evolutivo entre los organismos: entre más es el número de categorías que dos organismos comparten, más cercana es su relación evolutiva.",
+    "resumen": "Desde Aristóteles hasta Darwin, los sistemas de clasificación evolucionaron desde criterios simples (plantas/animales, con/sin sangre) hasta la noción de taxones y el reconocimiento del parentesco evolutivo.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "organismo",
+        "animal",
+        "evolutivo",
+        "grupo",
+        "categoría",
+        "especie",
+        "aristóteles",
+        "darwin",
+        "clasificación",
+        "criterio",
+        "planta",
+        "sangre",
+        "taxón",
+        "parentesco",
+        "resumen"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Principios de selección natural (Darwin)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Procesos que generan diversidad biológica"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.6912040710449219,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "1.3",
+    "titulo": "1.3 La nomenclatura linneana",
+    "texto_completo": "Resumen: La nomenclatura binomial, creada por Linneo, asigna un nombre único de dos partes (género y especie) a cada organismo.\n\n\n\nDar nombre a los grupos es una parte esencial de la clasificación. La nomenclatura más utilizada es la nomenclatura binomial, denominada ‘linneana’ en honor a Linneo, el primer naturalista en introducir una nomenclatura formal que, con modificaciones, aún se utiliza.\n\n\n\nEn el sistema de clasificación propuesto por Linneo, cada especie recibe un nombre único de origen latino que se escribe en cursiva y consta de dos partes: \n\n- Género primera parte, con letra inicial en mayúscula, \n\n- Epíteto específico la segunda parte, se escribe en minúscula. \n\n\n\nCada nombre científico es único, lo que hace posible el reconocimiento de un organismo independientemente del idioma y lugar.\n\n\n\nEjemplo: El lobo (Canis lupus), el chacal (Canis aureus) y el coyote (Canis latrans) comparten el mismo género Canis, pero son especies diferentes.",
+    "resumen": "La nomenclatura binomial, creada por Linneo, asigna un nombre único de dos partes (género y especie) a cada organismo.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "nomenclatura",
+        "nombre",
+        "canis",
+        "linneo",
+        "único",
+        "género",
+        "especie",
+        "binomial",
+        "parte",
+        "organismo",
+        "clasificación",
+        "creado",
+        "grupo",
+        "esencial",
+        "utilizado"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Aportes de Carlos Linneo a la clasificación"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.6338476538658142,
+      "num_conceptos_match": 2
+    }
+  },
+  {
+    "codigo": "2.1",
+    "titulo": "2.1 Los componentes de los sistemas de clasificación taxonómica",
+    "texto_completo": "Resumen: Los sistemas de clasificación taxonómica organizan los seres vivos de forma jerárquica mediante tres componentes: caracteres taxonómicos (morfológicos, fisiológicos, citológicos, moleculares), categorías taxonómicas (especie, género, familia, orden, clase, filo, reino, dominio) y taxones (grupos concretos dentro de cada categoría).\n\n\n\nLos sistemas de clasificación taxonómica permiten organizar a los seres vivos en diferentes grupos teniendo en cuenta las características que comparten. Esta organización se hace de forma jerárquica, es decir, cada grupo grande está compuesto por otros más pequeños y se van modificando a medida que se avanza en el conocimiento de la diversidad biológica. Los sistemas de clasificación están compuestos, principalmente, por tres elementos: el carácter taxonómico, las categorías taxonómicas y el taxón.\n\n\n\nLos caracteres o características que contribuyen a la descripción taxonómica se conocen como caracteres taxonómicos o sistemáticos. En la actualidad se tienen en cuenta los caracteres morfológicos, fisiológicos, citológicos y moleculares para clasificar a los seres vivos dentro de algunos de los grupos que establece el sistema de clasificación.\n\n\n\n- Caracteres morfológicos: hacen referencia a la forma del organismo. Son los más utilizados por los taxónomos porque se pueden identificar a simple vista.\n\n- Caracteres fisiológicos: hacen referencia a las características de las funciones vitales del organismo, por ejemplo, al tipo de reproducción, a la forma de obtener nutrientes, entre otras.\n\n- Caracteres citológicos: hacen referencia al tipo de células de las cuales está conformado el organismo; lo citológico se refiere al estudio de las células.\n\n\n\nLos niveles de organización del sistema de clasificación se conocen como categorías taxonómicas. La categoría taxonómica más pequeña es la especie. Las especies se agrupan entre ellas por criterios de semejanza y parentesco para formar los géneros; estos se agrupan para formar las familias; las familias se agrupan para formar órdenes; los órdenes conforman clases; las clases conforman filos; los filos se agrupan en reinos; y los reinos constituyen los dominios.\n\n\n\nLos diferentes grupos de individuos que conforman una categoría taxonómica reciben el nombre de taxón; por ejemplo, el Reino Animal es una categoría taxonómica conformada por diferentes taxones como los anfibios, los reptiles, los mamíferos, etc.",
+    "resumen": "Los sistemas de clasificación taxonómica organizan los seres vivos de forma jerárquica mediante tres componentes: caracteres taxonómicos (morfológicos, fisiológicos, citológicos, moleculares), categorías taxonómicas (especie, género, familia, orden, clase, filo, reino, dominio) y taxones (grupos concretos dentro de cada categoría).",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "taxonómico",
+        "caracter",
+        "categoría",
+        "sistema",
+        "clasificación",
+        "grupo",
+        "forma",
+        "citológico",
+        "reino",
+        "taxón",
+        "vivo",
+        "morfológico",
+        "fisiológico",
+        "taxonómica",
+        "especie"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Características distintivas de los seres vivos",
+        "Niveles de organización de la materia viva (célula, tejido, órgano, sistema, organismo)",
+        "Niveles de organización: células → tejidos → órganos → sistemas"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.817642092704773,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "2.2",
+    "titulo": "2.2 La clasificación basada en dominios y reinos",
+    "texto_completo": "Resumen: La clasificación actual de los seres vivos es una sección del árbol evolutivo. La taxonomía y la sistemática cambian continuamente gracias a los métodos moleculares. Los dominios y reinos son las categorías más amplias.\n\n\n\nLa clasificación actual de los seres vivos muestra lo que se puede considerar una sección en el tiempo actual del árbol evolutivo. Proporciona información sobre los grupos de seres vivos que existen hoy en día y permite inferir las relaciones entre los taxones actuales y los extintos. La taxonomía y la sistemática están en continuo cambio; los métodos moleculares son cada vez más precisos y dan cuenta de las relaciones de parentesco entre las especies. Por esta razón, no es extraño que puedan darse cambios en la ubicación taxonómica de especies, e incluso de categorías más grandes como familias y géneros.\n\n\n\nEjemplo:\n\n\n\n| Categoría       | Ejemplo animal | Ejemplo planta |\n\n|-----------------|----------------|----------------|\n\n| Especie         | pardalis       | chrysantha     |\n\n| Género          | Leopardus      | Tabebuia       |\n\n| Familia         | Felidae        | Bignoniaceae   |\n\n| Orden           | Carnivoria     | Lamiales       |\n\n| Clase           | Mammalia       | Magnoliopsida  |\n\n| Filo/División   | Chordata       | Magnoliophyta  |\n\n| Reino           | Animalia       | Plantae        |\n\n| Dominio         | Eucariota      | Eucariota      |\n\n\n\n\n\nTip: Los animales, las plantas y los hongos conforman reinos diferentes, pero pertenecen al mismo dominio: Eucariota.",
+    "resumen": "La clasificación actual de los seres vivos es una sección del árbol evolutivo. La taxonomía y la sistemática cambian continuamente gracias a los métodos moleculares. Los dominios y reinos son las categorías más amplias.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "actual",
+        "vivo",
+        "dominio",
+        "reino",
+        "categoría",
+        "especie",
+        "ejemplo",
+        "eucariota",
+        "clasificación",
+        "sección",
+        "árbol",
+        "evolutivo",
+        "taxonomía",
+        "método",
+        "molecular"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Procesos que generan diversidad biológica",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Características distintivas de los seres vivos"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.7404709458351135,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "2.3",
+    "titulo": "2.3 La clasificación en dominios",
+    "texto_completo": "Resumen: Carl Woese propuso en 1991 la categoría de dominio, dividiendo los seres vivos en tres grupos: Bacteria, Arquea y Eucariota. Bacteria y Arquea son procariotas; Eucariota incluye cuatro reinos: Protista, Hongo, Plantae y Animal. Esta clasificación se basa en el análisis del ARN ribosómico.\n\n\n\nCarl Woese propuso en 1991 una nueva jerarquía taxonómica: el dominio. Woese y un equipo de investigadores clasificaron a los seres vivos en tres grandes grupos o dominios: Bacteria, Arquea y Eucariota.\n\n\n\nDos dominios, Bacteria y Arquea, incluyen a los organismos procariotas; el tercer dominio, Eucariota, incluye a los organismos eucariotas y está subdividido en cuatro reinos: Protista, Hongo, Plantae y Animal.\n\n\n\nWoese planteó que el árbol de la vida se había dividido en tres ramas antes de que se originaran los hongos, las plantas y los animales, y que el antiguamente denominado Reino Monera en realidad estaba conformado por organismos de dos clases diferentes a las que denominó Bacteria y Arquea.\n\n\n\nLas bacterias y las arqueas tienen características similares al ser observadas al microscopio; pero presentan grandes diferencias en sus características estructurales y bioquímicas, tales como la rígida pared celular de las bacterias, formada por peptidoglucano, ausente en las arqueas. Las arqueobacterias (o dominio Archaea) incluyen procariotas que viven en ambientes extremos como altas temperaturas, elevada concentración de sal, baja concentración de oxígeno y bajo pH; por ello se les conoce como extremófilas.\n\n\n\nLa mayoría es heterótrofa y diversa en sus requerimientos nutricionales; tienen paredes celulares que no están compuestas por peptidoglucano, y los lípidos de su membrana celular son hidrocarburos de cadena ramificada y no ácidos grasos, como en las bacterias. La nueva clasificación por dominios se basa en el análisis comparado de las secuencias de nucleótidos de un tipo de ARN ribosómico.",
+    "resumen": "Carl Woese propuso en 1991 la categoría de dominio, dividiendo los seres vivos en tres grupos: Bacteria, Arquea y Eucariota. Bacteria y Arquea son procariotas; Eucariota incluye cuatro reinos: Protista, Hongo, Plantae y Animal. Esta clasificación se basa en el análisis del ARN ribosómico.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "bacteria",
+        "dominio",
+        "arquea",
+        "eucariota",
+        "woese",
+        "procariota",
+        "reino",
+        "hongo",
+        "animal",
+        "organismo",
+        "celular",
+        "carl",
+        "vivo",
+        "grupo",
+        "protista"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)",
+        "Procesos que generan diversidad biológica",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.6767759919166565,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "2.4",
+    "titulo": "2.4 La clasificación por reinos",
+    "texto_completo": "Resumen: Durante el siglo XX, el perfeccionamiento de los microscopios permitió diferenciar dos grupos dentro de los procariotas: arqueas y bacterias. Así, se establecieron seis reinos: arquea, bacterias, animales, plantas, hongo o fungi y protistas.\n\n\n\nDurante el siglo XX, el sistema de clasificación experimentó varios cambios. El perfeccionamiento de los microscopios y la investigación sobre organismos unicelulares permitieron establecer que dentro de los organismos procariotas, antes denominados monera, pueden diferenciarse dos grupos muy disímiles: las arqueas y las bacterias.\n\n\n\nEstos dos dominios son también dos reinos en los cuales se encuentran organismos procariotas. Por lo tanto, se describen seis reinos: arquea, bacterias, animales, plantas, hongo o fungi y protistas.",
+    "resumen": "Durante el siglo XX, el perfeccionamiento de los microscopios permitió diferenciar dos grupos dentro de los procariotas: arqueas y bacterias. Así, se establecieron seis reinos: arquea, bacterias, animales, plantas, hongo o fungi y protistas.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "bacteria",
+        "procariota",
+        "reino",
+        "organismo",
+        "siglo",
+        "perfeccionamiento",
+        "microscopio",
+        "grupo",
+        "arquea",
+        "animal",
+        "planta",
+        "hongo",
+        "fungi",
+        "protistas",
+        "sistema"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)",
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Procesos que generan diversidad biológica"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.5911611318588257,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "3.1",
+    "titulo": "3.1 El concepto biológico de especie",
+    "texto_completo": "Resumen: Según Dobzhansky y Mayr, la especie es un grupo de individuos semejantes que pueden reproducirse entre sí y originar descendencia fértil. Este concepto es el más utilizado pero genera debate porque hay excepciones: híbridos, individuos muy diferentes que sí se reproducen, y organismos asexuales como bacterias. Existen otros conceptos (filogenético, tipológico, evolutivo, ecológico), pero el biológico sigue siendo el más aceptado.\n\n\n\nSegún el genetista ruso Theodosius Dobzhansky (1900–1975) y el biólogo alemán Ernst Mayr (1904–2005), la especie se considera como un grupo de individuos que son semejantes y pueden reproducirse entre sí y originar descendencia fértil.\n\n\n\nAunque este concepto es el más utilizado y el de mayor aceptación, siempre ha sido tema de debate, pues los científicos no han logrado llegar a un consenso debido a que en la naturaleza se encuentran muchos casos en los que no se cumple a cabalidad con la condición.\n\n\n\nPor ejemplo, existen eventos en los que es posible la reproducción entre individuos de diferentes especies y se obtiene como resultado la aparición de híbridos. También existen individuos que a simple vista son tan diferentes que pareciera que no fueran de la misma especie; sin embargo, se considera que lo son porque pueden reproducirse entre sí. También está el caso de las bacterias que se reproducen de forma asexual, es decir, que no necesitan otro individuo para reproducirse. Por esto, la definición de especie como grupo de individuos capaz de reproducirse entre sí no es fácil de aplicar en todos los casos.\n\n\n\nDebido a lo anterior, el concepto biológico de especie ha cambiado en diferentes ocasiones y depende, en muchos casos, del punto de vista con el que se aborde. Se tienen otros conceptos desde los puntos de vista filogenético, tipológico, evolutivo y ecológico, entre otros. Sin embargo, el concepto biológico es el más utilizado.",
+    "resumen": "Según Dobzhansky y Mayr, la especie es un grupo de individuos semejantes que pueden reproducirse entre sí y originar descendencia fértil. Este concepto es el más utilizado pero genera debate porque hay excepciones: híbridos, individuos muy diferentes que sí se reproducen, y organismos asexuales como bacterias. Existen otros conceptos (filogenético, tipológico, evolutivo, ecológico), pero el biológico sigue siendo el más aceptado.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "individuo",
+        "especie",
+        "concepto",
+        "caso",
+        "grupo",
+        "utilizado",
+        "biológico",
+        "vista",
+        "dobzhansky",
+        "mayr",
+        "semejante",
+        "descendencia",
+        "fértil",
+        "debate",
+        "híbrido"
+      ]
+    },
+    "topic_id": 2,
+    "topic_prob": 0.3139080671232693,
+    "topic_keywords": [
+      "especie",
+      "concepto",
+      "de",
+      "el",
+      "individuos"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Procesos que generan diversidad biológica",
+        "Principios de selección natural (Darwin)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.6474324464797974,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "3.2",
+    "titulo": "3.2 El concepto filogenético de especie",
+    "texto_completo": "Resumen: El concepto filogenético de especie no depende de la reproducción, por lo que incluye organismos asexuales. Define la especie como el grupo más pequeño de individuos con un ancestro común que puede distinguirse de otros grupos similares, basándose en caracteres taxonómicos.\n\n\n\nLos taxónomos y sistemáticos proponen un concepto más amplio de especie en el cual no se toma en cuenta la reproducción entre ellos y por lo tanto incluyen a los organismos con reproducción asexual. Según el concepto filogenético, una especie es el grupo más pequeño de individuos que proviene de un ancestro común y que puede distinguirse de otros conjuntos similares. Este es un concepto que se basa en la observación de caracteres taxonómicos.",
+    "resumen": "El concepto filogenético de especie no depende de la reproducción, por lo que incluye organismos asexuales. Define la especie como el grupo más pequeño de individuos con un ancestro común que puede distinguirse de otros grupos similares, basándose en caracteres taxonómicos.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "concepto",
+        "especie",
+        "reproducción",
+        "grupo",
+        "filogenético",
+        "organismo",
+        "asexual",
+        "individuo",
+        "ancestro",
+        "similar",
+        "caracter",
+        "taxonómico",
+        "resumen",
+        "taxónomo",
+        "sistemático"
+      ]
+    },
+    "topic_id": 2,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "especie",
+      "concepto",
+      "de",
+      "el",
+      "individuos"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Procesos que generan diversidad biológica",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Principios de selección natural (Darwin)"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.6280230283737183,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "3.3",
+    "titulo": "3.3 El concepto tipológico de especie",
+    "texto_completo": "Resumen: El concepto tipológico o morfológico de especie agrupa individuos según características morfológicas observables a simple vista. No siempre es viable porque adaptaciones convergentes pueden hacer similares a especies no relacionadas. Tip: Algunos individuos de diferentes especies muestran características morfológicas similares.\n\n\n\nTambién se conoce como concepto morfológico y agrupa a los individuos de la misma especie con base únicamente en las características morfológicas observables a simple vista. Esto no es siempre viable, puesto que muchas especies desarrollan adaptaciones que las hacen similares a otras, lo cual genera confusión en su clasificación.\n\n\n\nTip: Algunos individuos de diferentes especies muestran características morfológicas similares.",
+    "resumen": "El concepto tipológico o morfológico de especie agrupa individuos según características morfológicas observables a simple vista. No siempre es viable porque adaptaciones convergentes pueden hacer similares a especies no relacionadas. Tip: Algunos individuos de diferentes especies muestran características morfológicas similares.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "especie",
+        "individuo",
+        "característica",
+        "morfológica",
+        "similar",
+        "concepto",
+        "morfológico",
+        "observabl",
+        "simple",
+        "vista",
+        "viable",
+        "adaptación",
+        "tip",
+        "resumen",
+        "tipológico"
+      ]
+    },
+    "topic_id": 2,
+    "topic_prob": 0.35803686130841894,
+    "topic_keywords": [
+      "especie",
+      "concepto",
+      "de",
+      "el",
+      "individuos"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Procesos que generan diversidad biológica",
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Características distintivas de los seres vivos",
+        "Principios de selección natural (Darwin)"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.5341324210166931,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "3.4",
+    "titulo": "3.4 El concepto evolutivo de especie",
+    "texto_completo": "Resumen: El concepto evolutivo de especie define a la especie como un linaje que evoluciona por separado de otros grupos, con sus propias tendencias evolutivas. Se basa en la historia evolutiva del grupo y sus diferencias con otros grupos.\n\n\n\nDefine a la especie como un linaje o línea que evoluciona por separado de otros grupos y por lo tanto tienen sus propias tendencias evolutivas. Este concepto se basa en la historia evolutiva de un grupo de organismos y sus diferencias con otros grupos.",
+    "resumen": "El concepto evolutivo de especie define a la especie como un linaje que evoluciona por separado de otros grupos, con sus propias tendencias evolutivas. Se basa en la historia evolutiva del grupo y sus diferencias con otros grupos.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "grupo",
+        "evolutivo",
+        "especie",
+        "concepto",
+        "linaje",
+        "separado",
+        "tendencia",
+        "historia",
+        "diferencia",
+        "resumen",
+        "línea",
+        "organismo"
+      ]
+    },
+    "topic_id": 2,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "especie",
+      "concepto",
+      "de",
+      "el",
+      "individuos"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Procesos que generan diversidad biológica",
+        "Principios de selección natural (Darwin)",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.6251724362373352,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "3.5",
+    "titulo": "3.5 El concepto ecológico de especie",
+    "texto_completo": "Resumen: El concepto ecológico de especie define que los individuos de una misma especie comparten el mismo nicho ecológico y por lo tanto los mismos requerimientos ambientales. Este concepto destaca la importancia del ambiente y los recursos en el desarrollo de las especies.\n\n\n\nLos individuos de una misma especie son los que comparten el mismo nicho ecológico, y por lo tanto tienen los mismos requerimientos ambientales. Este concepto retoma la importancia del ambiente y los recursos en el desarrollo de las especies.",
+    "resumen": "El concepto ecológico de especie define que los individuos de una misma especie comparten el mismo nicho ecológico y por lo tanto los mismos requerimientos ambientales. Este concepto destaca la importancia del ambiente y los recursos en el desarrollo de las especies.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "especie",
+        "concepto",
+        "ecológico",
+        "individuo",
+        "nicho",
+        "requerimiento",
+        "ambiental",
+        "importancia",
+        "ambiente",
+        "recurso",
+        "desarrollo",
+        "resumen"
+      ]
+    },
+    "topic_id": 2,
+    "topic_prob": 0.4180421811717446,
+    "topic_keywords": [
+      "especie",
+      "concepto",
+      "de",
+      "el",
+      "individuos"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Impactos de la actividad humana en ecosistemas (deforestación, contaminación, sobrepesca)",
+        "Procesos que generan diversidad biológica",
+        "Principios de selección natural (Darwin)",
+        "O.CN.4.3. Diseñar modelos representativos de flujos de energía en cadenas y redes alimenticias, identificar impactos humanos en ecosistemas.",
+        "Estrategias de conservación de vida silvestre"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.6026417016983032,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "4.1.1",
+    "titulo": "4.1.1 La taxonomía evolutiva",
+    "texto_completo": "Resumen: La taxonomía evolutiva (darwiniana u ortodoxa) se basa en dos criterios: la genealogía (ascendencia común) y el grado de similitud (cambios evolutivos acumulados). Agrupa organismos por homologías y refleja la historia evolutiva. Es aún muy utilizada.\n\n\n\nExisten diferentes escuelas que tratan de explicar las relaciones evolutivas o filogenéticas entre los seres vivos. Actualmente, la más utilizada es la cladística; anteriormente la escuela evolutiva y la fenética o numérica eran las escuelas más utilizadas en sistemática.\n\n\n\nLa taxonomía evolutiva: Los aportes de la teoría de Darwin pusieron fin a algunas incertidumbres taxonómicas. Según ellos, un sistema de clasificación sólido tiene que basarse fundamentalmente en dos criterios: la genealogía, es decir, la ascendencia común, y el grado de similitud, o sea, la cantidad de cambios evolutivos acumulados desde cuando los grupos se separaron del ancestro común. Para esta escuela el cambio evolutivo no sucede a la misma velocidad, por eso es importante tener en cuenta esta información en los resultados o interpretaciones.\n\n\n\nEl sistema de clasificación basado en estos criterios se llama evolutivo, darwiniano u ortodoxo. En esta clasificación, los organismos se agrupan en función de las características que parecen derivar de sus ancestros comunes, llamadas homologías. Es aún muy utilizada y refleja la historia evolutiva de los organismos que se estudian.",
+    "resumen": "La taxonomía evolutiva (darwiniana u ortodoxa) se basa en dos criterios: la genealogía (ascendencia común) y el grado de similitud (cambios evolutivos acumulados). Agrupa organismos por homologías y refleja la historia evolutiva. Es aún muy utilizada.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "evolutivo",
+        "utilizado",
+        "escuela",
+        "criterio",
+        "cambio",
+        "organismo",
+        "clasificación",
+        "taxonomía",
+        "ortodoxo",
+        "genealogía",
+        "ascendencia",
+        "grado",
+        "similitud",
+        "acumulado",
+        "homología"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Principios de selección natural (Darwin)",
+        "Procesos que generan diversidad biológica"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.7083308100700378,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "4.1.2",
+    "titulo": "4.1.2 La fenética o numérica",
+    "texto_completo": "Resumen: La escuela fenética o numérica clasifica por similitud global sin considerar relaciones evolutivas. Agrupa organismos según muchas características con igual importancia, representando las similitudes en un fenograma mediante análisis informáticos que calculan distancias.\n\n\n\nLa fenética o numérica se basa en la similitud sin tener en cuenta las relaciones evolutivas o filogenéticas. Los grupos deben compartir un gran número de características. En este sistema de clasificación, los organismos se agrupan de acuerdo con la similitud global que se puede representar mediante un diagrama llamado fenograma. Se deben tener en cuenta tantas características como sea posible y dar a todas ellas la misma importancia.\n\n\n\nSegún esta escuela, agrupar a los seres vivos por parentesco solo es útil en casos particulares. Por esta razón sus análisis se basan en tomar cuantas características sean posibles de comparar para luego construir una matriz que permita mostrar las diferencias entre los seres vivos, que luego serán interpretadas como distancias a partir de la utilización de diferentes programas informáticos que analizan dichas características y arrojan unos resultados que pueden ser interpretados como parecidos o distancias entre especies.",
+    "resumen": "La escuela fenética o numérica clasifica por similitud global sin considerar relaciones evolutivas. Agrupa organismos según muchas características con igual importancia, representando las similitudes en un fenograma mediante análisis informáticos que calculan distancias.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "característica",
+        "similitud",
+        "distancia",
+        "escuela",
+        "fenético",
+        "numérico",
+        "global",
+        "relación",
+        "evolutivo",
+        "organismo",
+        "importancia",
+        "análisis",
+        "informático",
+        "vivo",
+        "fenograma"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Procesos que generan diversidad biológica",
+        "Características distintivas de los seres vivos",
+        "Relación entre niveles de organización y procesos evolutivos"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.5720280408859253,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "4.1.3",
+    "titulo": "4.1.3 La escuela cladística o sistemática filogenética",
+    "texto_completo": "Resumen: La cladística se basa exclusivamente en la genealogía. Considera que los taxones son monofiléticos (origen común) y los grupos se denominan clados. Clasifica usando caracteres homólogos (misma estructura, distinta función, por herencia común) y análogos (distinta estructura, misma función, por adaptación independiente).\n\n\n\nLa cladística se basa exclusivamente en la genealogía, la cual considera que los taxones son monofiléticos, es decir, tienen un origen común. Los grupos formados se denominan clados. En este sistema de clasificación, los organismos se agrupan en función de las características que poseen todos ellos y que otros organismos no tienen, para lo cual se deben diferenciar dos tipos de caracteres: los homólogos y los análogos.\n\n\n\nCaracteres homólogos: son los que comparten dos o más especies por descender de un mismo ancestro. Los órganos con características homólogas tienen estructuras muy similares aunque desempeñen diferente función. Por ejemplo, las aletas de un delfín, las patas de un caballo y las alas de un murciélago tienen una estructura similar pero su función es diferente.\n\n\n\nCaracteres análogos: se originan independientemente en más de un organismo como adaptaciones al medio en el que viven. Los órganos con características análogas pueden desempeñar la misma función aunque estructuralmente sean muy diferentes. Por ejemplo, las alas de un insecto y las de un murciélago.",
+    "resumen": "La cladística se basa exclusivamente en la genealogía. Considera que los taxones son monofiléticos (origen común) y los grupos se denominan clados. Clasifica usando caracteres homólogos (misma estructura, distinta función, por herencia común) y análogos (distinta estructura, misma función, por adaptación independiente).",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "función",
+        "caracter",
+        "homólogo",
+        "estructura",
+        "análogo",
+        "organismo",
+        "característica",
+        "cladística",
+        "genealogía",
+        "taxón",
+        "monofilético",
+        "origen",
+        "grupo",
+        "clado",
+        "distinto"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 0.7950148087892018,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Procesos que generan diversidad biológica"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.7250683903694153,
+      "num_conceptos_match": 4
+    }
+  },
+  {
+    "codigo": "4.2",
+    "titulo": "4.2 La filogenia",
+    "texto_completo": "Resumen: La filogenia es la historia evolutiva de los seres vivos, representada como un árbol ramificado (árbol filogenético o cladograma). La base es el ancestro común, las ramas son linajes. Se usa para buscar el ancestro común más inmediato. Las técnicas moleculares y los registros fósiles ayudan a construir filogenias.\n\n\n\nLa historia evolutiva de los seres vivos se puede representar como un árbol con ramas que se van dividiendo a medida que se alejan de la base del tronco. La base representa a la especie ancestral común a todas las del árbol y sus ramas representan linajes de la evolución. Estos árboles se denominan árboles filogenéticos o filogenias y se representan en diagramas ramificados llamados cladogramas.\n\n\n\nLas filogenias se utilizan para reconstruir la historia evolutiva de una especie o de un grupo de especies buscando el ancestro común más inmediato. Así, por ejemplo, el ancestro común de las especies de un mismo género será más reciente que el ancestro común de los géneros que conforman una familia, y este, a su vez, será más reciente que el ancestro común de las familias que componen una clase. Actualmente, las técnicas moleculares brindan información que contribuye a la construcción de filogenias, ya que los organismos se pueden agrupar teniendo en cuenta la similitud entre las secuencias de ADN, incluida la información de registros fósiles.",
+    "resumen": "La filogenia es la historia evolutiva de los seres vivos, representada como un árbol ramificado (árbol filogenético o cladograma). La base es el ancestro común, las ramas son linajes. Se usa para buscar el ancestro común más inmediato. Las técnicas moleculares y los registros fósiles ayudan a construir filogenias.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "árbol",
+        "ancestro",
+        "filogenia",
+        "especie",
+        "historia",
+        "evolutivo",
+        "base",
+        "rama",
+        "vivo",
+        "ramificado",
+        "filogenético",
+        "cladograma",
+        "linaj",
+        "inmediato",
+        "técnica"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Procesos que generan diversidad biológica",
+        "O.CN.4.8. Investigar estructura del universo, evidencias geológicas, ciclos biogeoquímicos y cambio climático."
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.6315151453018188,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "4.3.1",
+    "titulo": "4.3.1 Construcción de cladogramas - Conceptos y criterios",
+    "texto_completo": "Resumen: Los cladogramas son diagramas ramificados que representan relaciones de parentesco. Se construyen eligiendo grupos a clasificar y aplicando dos criterios: simplicidad (rasgos fáciles de identificar) y evolutivo (rasgos como homologías). La tabla muestra presencia (+) o ausencia (-) de rasgos en siete vertebrados.\n\n\n\nLos cladogramas son diagramas ramificados que constituyen la forma más común de representar las relaciones de parentesco entre diferentes grupos. Existen formas diferentes de dibujar estos diagramas, pero no existe ninguna diferencia si las ramas se disponen de manera vertical, hacia arriba, hacia abajo u horizontales. Los cladogramas se construyen así: se eligen inicialmente los grupos que se quieren clasificar, por ejemplo, siete animales que representan a las principales clases de vertebrados; se escogen dos criterios que permiten definir los rasgos que van a servir para comparar los grupos, para los cuales es necesario tener en cuenta:\n\n\n\n- Criterio de simplicidad: es indispensable seleccionar rasgos que sean fáciles de identificar.\n\n- Criterio evolutivo: los rasgos elegidos deberán ser homologías; así, el diagrama representará, además, relaciones de parentesco evolutivo entre los grupos.\n\n\n\nEn la tabla se muestran los datos obtenidos. El signo (+) indica que el rasgo está presente y el signo (-) que está ausente.\n\n\n\nRasgo / Grupo: Tiburón | Sardina | Rana | Cocodrilo | Paloma | Murciélago | Chimpancé\n\nVertebrado: + | + | + | + | + | + | +\n\nEsqueleto óseo: - | + | + | + | + | + | +\n\nTetrápodo: - | - | + | + | + | + | +\n\nCorazón con cuatro cavidades: - | - | - | + | + | + | +\n\nPlumas: - | - | - | - | + | - | -\n\n\n\nTip: Actualmente, los cladogramas se construyen con programas informáticos que son capaces de manejar muchos caracteres.",
+    "resumen": "Los cladogramas son diagramas ramificados que representan relaciones de parentesco. Se construyen eligiendo grupos a clasificar y aplicando dos criterios: simplicidad (rasgos fáciles de identificar) y evolutivo (rasgos como homologías). La tabla muestra presencia (+) o ausencia (-) de rasgos en siete vertebrados.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "rasgo",
+        "grupo",
+        "cladograma",
+        "diagrama",
+        "criterio",
+        "relación",
+        "parentesco",
+        "evolutivo",
+        "vertebrado",
+        "ramificado",
+        "simplicidad",
+        "fácil",
+        "homología",
+        "tabla",
+        "forma"
+      ]
+    },
+    "topic_id": 3,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "que",
+      "se",
+      "de",
+      "rasgo",
+      "los"
+    ],
+    "curriculum": {
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Relación entre niveles de organización y procesos evolutivos"
+      ],
+      "criterios_seleccionados": [
+        "Explicar el nivel de complejidad de los seres vivos a partir del análisis de propiedades y clasificación taxonómica.",
+        "Clasificar organismos en grupos taxonómicos usando características observables."
+      ],
+      "score_max": 0.5386373400688171,
+      "num_conceptos_match": 2
+    }
+  },
+  {
+    "codigo": "4.3.2",
+    "titulo": "4.3.2 Construcción de cladogramas - Proceso paso a paso",
+    "texto_completo": "Resumen: El cladograma se construye a partir de un rasgo común (columna vertebral). Cada bifurcación se basa en un rasgo presente o ausente: esqueleto óseo separa al tiburón; ser tetrápodo excluye a la sardina; corazón de cuatro cámaras separa a la rana; plumas es exclusivo de la paloma; pelo y glándulas mamarias unen a murciélago y chimpancé.\n\n\n\nSe construye el diagrama partiendo de un rasgo común, en este caso, todos los animales tienen columna vertebral, por lo que se toma este carácter como punto de partida. A partir del origen común, las líneas o ramas del diagrama se bifurcan; en cada bifurcación se indica el rasgo que permite hacer la división.\n\n\n\n- Tener esqueleto óseo permite hacer la primera división en dos grupos y separar al tiburón, con esqueleto de cartílago.\n\n- Ser tetrápodo es un rasgo que comparten todos los que tienen esqueleto óseo menos la sardina, por lo que se abre una nueva rama en el diagrama.\n\n- Tener un corazón dividido en cuatro cámaras es una característica de todos los animales con cuatro patas, menos de la rana. En este punto se bifurca la rama correspondiente a la rana.\n\n- Poseer plumas es una característica que solo está presente en la paloma.\n\n- Poseer pelo y glándulas mamarias es una característica compartida por el murciélago y el chimpancé, así que se puede suponer que proceden de un ancestro común que se separó del resto de los vertebrados.",
+    "resumen": "El cladograma se construye a partir de un rasgo común (columna vertebral). Cada bifurcación se basa en un rasgo presente o ausente: esqueleto óseo separa al tiburón; ser tetrápodo excluye a la sardina; corazón de cuatro cámaras separa a la rana; plumas es exclusivo de la paloma; pelo y glándulas mamarias unen a murciélago y chimpancé.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "rasgo",
+        "esqueleto",
+        "óseo",
+        "rana",
+        "diagrama",
+        "rama",
+        "característica",
+        "columna",
+        "vertebral",
+        "bifurcación",
+        "presente",
+        "tiburón",
+        "tetrápodo",
+        "sardina",
+        "corazón"
+      ]
+    },
+    "topic_id": 3,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "que",
+      "se",
+      "de",
+      "rasgo",
+      "los"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Diagramas de cuerpo libre",
+        "Anatomía y fisiología del sistema reproductor humano"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.48662224411964417,
+      "num_conceptos_match": 3
+    }
+  },
+  {
+    "codigo": "4.4",
+    "titulo": "4.4 Disciplinas que aportan a la sistemática",
+    "texto_completo": "Resumen: Varias disciplinas auxiliares contribuyen a la sistemática. La anatomía identifica caracteres homólogos y análogos. La biología celular aporta caracteres citológicos. La biología molecular compara ADN y ARN para parentesco. La paleontología usa fósiles para relaciones filogenéticas. La biogeografía estudia distribución geográfica y especiación. La ecología analiza interrelaciones entre seres vivos.\n\n\n\nAnatomía: Estudia la forma y la organización de la estructura interna de los seres vivos; por lo tanto, ayuda a identificar caracteres análogos y homólogos.\n\n\n\nBiología Celular: Se dedica al estudio de las células. Gracias a ella se pueden establecer diferencias y semejanzas entre los seres vivos basadas en caracteres citológicos.\n\n\n\nBiología molecular: Se encarga principalmente de realizar análisis de ADN y ARN. Un ejemplo es la comparación de secuencias de ADN para establecer relaciones de parentesco.\n\n\n\nPaleontología: La información que brindan los fósiles estudiados por la paleontología es esencial para el desarrollo de la sistemática, pues con ellos se pueden establecer relaciones filogenéticas entre los organismos vivos y los ya extintos. La paleontología también permite reconstruir ambientes pasados.\n\n\n\nBiogeografía: Brinda información acerca de la distribución geográfica de las especies. Así, se pueden establecer fenómenos de especiación y construir la historia de una especie en el espacio. También es una herramienta que aporta a la comprensión del parecido entre la biota de lugares distantes.\n\n\n\nEcología: Estudia las interrelaciones que se dan entre los seres vivos. El análisis de estas interrelaciones puede ayudar a la sistemática a establecer diferencias entre grupos biológicos. Es una disciplina que suministra información valiosa sobre la vida de las especies en los ecosistemas.",
+    "resumen": "Varias disciplinas auxiliares contribuyen a la sistemática. La anatomía identifica caracteres homólogos y análogos. La biología celular aporta caracteres citológicos. La biología molecular compara ADN y ARN para parentesco. La paleontología usa fósiles para relaciones filogenéticas. La biogeografía estudia distribución geográfica y especiación. La ecología analiza interrelaciones entre seres vivos.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "vivo",
+        "caracter",
+        "biología",
+        "paleontología",
+        "adn",
+        "relación",
+        "interrelación",
+        "información",
+        "especie",
+        "disciplina",
+        "sistemática",
+        "anatomía",
+        "homólogo",
+        "análogo",
+        "celular"
+      ]
+    },
+    "topic_id": 0,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "la",
+      "de",
+      "los",
+      "las",
+      "se"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Procesos que generan diversidad biológica",
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Relación entre niveles de organización y procesos evolutivos",
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "O.CN.4.1. Describir los tipos y características de las células, el ciclo celular, mecanismos de reproducción celular y constitución de tejidos."
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.5819845199584961,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "5.1",
+    "titulo": "5.1 Características de los reinos",
+    "texto_completo": "Resumen: Los seis reinos se diferencian por tipo de célula (procariota/eucariota), presencia de núcleo, nutrición (autótrofa/heterótrofa), composición de membrana y pared celular, y número de células. Arquea y Bacteria son procariotas; Protista, Hongo, Plantae y Animalia (no incluida en la tabla original) son eucariotas. El reino Animalia no aparece en la tabla original, pero se menciona para completitud.\n\n\n\nArquea\n\nTipo de célula: Procariota\n\nNúcleo: Ausente\n\nNutrición: Autótrofa o heterótrofa\n\nMembrana celular: Hidrocarburos de cadena ramificada ligados a glicerol mediante enlaces éter\n\nPared celular: Presente, sin peptidoglucano\n\nNúmero de células: Unicelular\n\n\n\nBacteria\n\nTipo de célula: Procariota\n\nNúcleo: Ausente\n\nNutrición: Autótrofa o heterótrofa\n\nMembrana celular: Ácidos grasos de cadena recta ligados a glicerol mediante enlaces éster\n\nPared celular: Presente, compuesta por peptidoglucano\n\nNúmero de células: Unicelular\n\n\n\nProtista\n\nTipo de célula: Eucariota\n\nNúcleo: Presente\n\nNutrición: Autótrofa o heterótrofa\n\nMembrana celular: Ácidos grasos de cadena recta ligados a glicerol mediante enlaces éster\n\nPared celular: Variable (presente en algunos, ausente en otros)\n\nNúmero de células: Variable (unicelular o multicelular simple)\n\n\n\nHongo o Fungi\n\nTipo de célula: Eucariota\n\nNúcleo: Presente\n\nNutrición: Heterótrofa (absorción)\n\nMembrana celular: Ácidos grasos de cadena recta ligados a glicerol mediante enlaces éster\n\nPared celular: Presente (quitina)\n\nNúmero de células: Variable (unicelular como levaduras o multicelular como hongos filamentosos)\n\n\n\nPlantae\n\nTipo de célula: Eucariota\n\nNúcleo: Presente\n\nNutrición: Autótrofa (fotosíntesis)\n\nMembrana celular: Ácidos grasos de cadena recta ligados a glicerol mediante enlaces éster\n\nPared celular: Presente (celulosa)\n\nNúmero de células: Multicelular\n\n\n\nNota: El reino Animalia (no listado en el original) tiene células eucariotas, núcleo presente, nutrición heterótrofa, membrana similar a otros eucariotas, sin pared celular, y es multicelular.",
+    "resumen": "Los seis reinos se diferencian por tipo de célula (procariota/eucariota), presencia de núcleo, nutrición (autótrofa/heterótrofa), composición de membrana y pared celular, y número de células. Arquea y Bacteria son procariotas; Protista, Hongo, Plantae y Animalia (no incluida en la tabla original) son eucariotas. El reino Animalia no aparece en la tabla original, pero se menciona para completitud.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "célula",
+        "celular",
+        "presente",
+        "núcleo",
+        "nutrición",
+        "membrana",
+        "pared",
+        "tipo",
+        "heterótrofa",
+        "número",
+        "autótrofa",
+        "cadena",
+        "ligado",
+        "glicerol",
+        "enlace"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 2: Explorando la Vida Celular (pág. 14)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Características distintivas de los seres vivos",
+        "O.CN.4.1. Describir los tipos y características de las células, el ciclo celular, mecanismos de reproducción celular y constitución de tejidos.",
+        "Niveles de organización: células → tejidos → órganos → sistemas",
+        "Niveles de organización de la materia viva (célula, tejido, órgano, sistema, organismo)"
+      ],
+      "criterios_seleccionados": [
+        "Diferenciar células y tejidos que conforman a seres vivos.",
+        "Explicar la importancia del ciclo celular y tipos de reproducción.",
+        "Identificar aportes de la tecnología al estudio celular."
+      ],
+      "score_max": 0.5873057842254639,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "5.2",
+    "titulo": "5.2 La clasificación de las arqueas",
+    "texto_completo": "Resumen: La clasificación actual de procariotas se basa en el ARN ribosómico y la composición de la pared celular. Las arqueas se dividen en dos filos: Crenarqueota (termófilos que viven en temperaturas extremas, fuentes termales sulfurosas y fumarolas submarinas) y Euriarqueota (halófilas, termófilas extremas y metanógenas, estas últimas anaerobias obligadas).\n\n\n\nLa clasificación actual de los procariotas se basa en el análisis de la secuencia de nucleótidos del ARN ribosómico y en otras evidencias moleculares como la composición química de su pared celular. En términos taxonómicos, las arqueas actualmente se dividen en dos filos: crenarqueota y euriarqueota.\n\n\n\nCrenarqueota: Son principalmente procariotas termófilos que crecen en temperaturas muy altas o muy bajas. La temperatura óptima para muchas arqueas es mayor que 80 °C. También suelen encontrarse en fuentes termales sulfurosas en donde las temperaturas están cercanas a 80 °C y la acidez es también extrema, valores de pH de 1 a 2. Se encuentran también en zonas volcánicas bajo el mar o fumarolas.\n\n\n\nEuriarqueota: Son también procariotas que habitan en ambientes extremos. Este grupo incluye halófilas y termófilas extremas y procariotas metanógenos. Las halófilas habitan en lugares con altas concentraciones de sal, como el mar Muerto; las termófilas requieren temperaturas por encima de los 80 °C; y las metanógenas o productoras de metano viven en ambientes donde no hay oxígeno, como aguas residuales, pantanos y el tracto digestivo de algunos animales. Son anaerobios obligados, es decir, mueren en presencia de oxígeno.",
+    "resumen": "La clasificación actual de procariotas se basa en el ARN ribosómico y la composición de la pared celular. Las arqueas se dividen en dos filos: Crenarqueota (termófilos que viven en temperaturas extremas, fuentes termales sulfurosas y fumarolas submarinas) y Euriarqueota (halófilas, termófilas extremas y metanógenas, estas últimas anaerobias obligadas).",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "procariota",
+        "temperatura",
+        "extremo",
+        "arquea",
+        "crenarqueota",
+        "euriarqueota",
+        "halófila",
+        "termófila",
+        "clasificación",
+        "actual",
+        "arn",
+        "ribosómico",
+        "composición",
+        "pared",
+        "celular"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 5: Vida en Transformación (pág. 40)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Evidencias evolutivas (registro fósil, deriva continental, extinciones masivas, anatomía comparada)",
+        "Sistema de clasificación taxonómica (Dominio, Reino, Filo/División, Clase, Orden, Familia, Género, Especie)",
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Biomoléculas (carbohidratos, lípidos, proteínas, ácidos nucleicos)"
+      ],
+      "criterios_seleccionados": [
+        "Explicar evolución biológica usando evidencias y principios de selección natural.",
+        "Inferir importancia de eras geológicas y fechado radiactivo.",
+        "--"
+      ],
+      "score_max": 0.5624985694885254,
+      "num_conceptos_match": 4
+    }
+  },
+  {
+    "codigo": "5.3",
+    "titulo": "5.3 La clasificación de las bacterias",
+    "texto_completo": "Resumen: Las bacterias se clasifican por forma, pigmentos, locomoción, nutrición, respiración y tinción de Gram. La tinción de Gram distingue grampositivas (pared gruesa de peptidoglucano, color morado) de gramnegativas (doble membrana y pared delgada, color rojo). Según su forma, hay cocos (esféricos), bacilos (bastoncillo), espirilos (helicoidales con flagelo) y espiroquetas (helicoidales con filamentos axiales).\n\n\n\nLas bacterias se pueden clasificar de acuerdo con varias características como su forma, la presencia de pigmentos, los medios de locomoción, los requerimientos nutricionales, el tipo de respiración y la reacción ante los métodos de tinción.\n\n\n\nLas bacterias según la tinción de Gram\n\nEsta clasificación se determina mediante una técnica conocida como tinción de Gram. Las bacterias grampositivas se caracterizan por tener una envoltura celular compuesta por la membrana citoplasmática y una pared celular de peptidoglucano, que es la molécula responsable de retener el tinte de la coloración de Gram, y que hace que las bacterias se tiñan de color morado o azul oscuro.\n\n\n\nEn cambio, las bacterias gramnegativas se caracterizan por presentar doble membrana lipídica y tener una pared de peptidoglucano mucho más delgada que la de las grampositivas, por lo que no son capaces de retener en su totalidad la coloración de Gram y se tornan de color rojo. Este es un ejemplo de un carácter bioquímico.\n\n\n\nCocos: Presentan forma esférica u ovoide y son aerobios estrictos, es decir, no pueden vivir sin oxígeno. Cuando se agrupan de forma lineal reciben el nombre de estreptococos.\n\n\n\nBacilos: Tienen forma de bastoncillo. Cuando se agrupan dos se llaman diplobacilos y cuando forman cadenas se denominan estreptobacilos. Este tipo de bacterias puede encontrarse en diferentes ambientes.\n\n\n\nEspirilos: Son bacterias gramnegativas que se caracterizan por tener forma helicoidal similar a los bacilos, y por presentar flagelo. Algunas pueden causar enfermedades como la sífilis y ser muy patógenas.\n\n\n\nEspiroquetas: Tienen apariencia alargada y enrollada o helicoidal. Son bacterias gramnegativas que se distinguen por presentar flagelos especializados que se denominan filamentos axiales, gracias a los cuales se mueven.",
+    "resumen": "Las bacterias se clasifican por forma, pigmentos, locomoción, nutrición, respiración y tinción de Gram. La tinción de Gram distingue grampositivas (pared gruesa de peptidoglucano, color morado) de gramnegativas (doble membrana y pared delgada, color rojo). Según su forma, hay cocos (esféricos), bacilos (bastoncillo), espirilos (helicoidales con flagelo) y espiroquetas (helicoidales con filamentos axiales).",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "bacteria",
+        "forma",
+        "gram",
+        "tinción",
+        "pared",
+        "color",
+        "helicoidal",
+        "grampositiva",
+        "membrana",
+        "bacilo",
+        "flagelo",
+        "gramnegativa",
+        "pigmento",
+        "locomoción",
+        "respiración"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 7: Prevención Contra Microorganismos (pág. 61)",
+      "seccion": "Sección 2: Salud, Prevención y Bienestar",
+      "conceptos_seleccionados": [
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)",
+        "Biomoléculas (carbohidratos, lípidos, proteínas, ácidos nucleicos)"
+      ],
+      "criterios_seleccionados": [],
+      "score_max": 0.6952404975891113,
+      "num_conceptos_match": 2
+    }
+  },
+  {
+    "codigo": "6.1",
+    "titulo": "6.1 Los protistas o protoctistas",
+    "texto_completo": "Resumen: Los protistas son eucariotas difíciles de clasificar, mayormente unicelulares y microscópicos, aunque algunos son multicelulares. Su nutrición es variada (autótrofa o heterótrofa), reproducción sexual o asexual, y algunos móviles (flagelos, cilios, pseudópodos). Se dividen en tres grupos: protozoos, algas y mohos acuáticos.\n\n\n\nLos protistas incluyen un conjunto de seres vivos eucariotas de difícil clasificación, que por sus características no se han podido incluir en otro reino. En términos generales, son organismos eucariotas, la mayoría unicelular y microscópica, pero algunos son multicelulares y de gran tamaño; su nutrición es variada, pueden ser autótrofos o heterótrofos; su reproducción puede ser sexual o asexual, y algunos son móviles y se desplazan mediante flagelos, cilios o pseudópodos. Actualmente se dividen en tres grupos: protozoos, algas y mohos acuáticos o mucilaginosos.",
+    "resumen": "Los protistas son eucariotas difíciles de clasificar, mayormente unicelulares y microscópicos, aunque algunos son multicelulares. Su nutrición es variada (autótrofa o heterótrofa), reproducción sexual o asexual, y algunos móviles (flagelos, cilios, pseudópodos). Se dividen en tres grupos: protozoos, algas y mohos acuáticos.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "eucariota",
+        "protista",
+        "difícil",
+        "unicelular",
+        "microscópico",
+        "multicelular",
+        "nutrición",
+        "variado",
+        "reproducción",
+        "sexual",
+        "asexual",
+        "móvil",
+        "flagelo",
+        "cilio",
+        "pseudópodo"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 2: Explorando la Vida Celular (pág. 14)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)",
+        "Procesos que generan diversidad biológica",
+        "Gametogénesis (espermatogénesis y ovogénesis)",
+        "Biomoléculas (carbohidratos, lípidos, proteínas, ácidos nucleicos)"
+      ],
+      "criterios_seleccionados": [
+        "Diferenciar células y tejidos que conforman a seres vivos.",
+        "Explicar la importancia del ciclo celular y tipos de reproducción.",
+        "Identificar aportes de la tecnología al estudio celular."
+      ],
+      "score_max": 0.7404903769493103,
+      "num_conceptos_match": 5
+    }
+  },
+  {
+    "codigo": "6.2",
+    "titulo": "6.2 Los protozoos",
+    "texto_completo": "Resumen: Los protozoos son protistas unicelulares heterótrofos similares a animales. Se clasifican según su locomoción: flagelados (flagelos), sarcodinos (pseudópodos), ciliados (cilios) y esporozoarios (sin locomoción, parásitos con esporas). Viven en agua dulce, como paramecios y amebas.\n\n\n\nSon protistas unicelulares similares a animales. En su mayoría poseen nutrición heterótrofa. Pueden obtener su alimento como depredadores de bacterias y otros protozoos o mediante la ingesta de materia orgánica en descomposición. Es común encontrarlos en las charcas de agua dulce, como los paramecios que se desplazan mediante cilios, y las amebas que lo hacen por medio de pseudópodos. Según su tipo de locomoción, los protozoos se pueden clasificar en flagelados, ciliados, rizópodos o sarcodinos y esporozoarios.\n\n\n\nFlagelados: son los protistas más primitivos; pueden presentar uno o más flagelos que utilizan para movilizarse en ambientes acuáticos. Tienen membrana ondulante y un engrosamiento en la membrana denominado costa. Pueden vivir libres o como parásitos al interior de vertebrados e invertebrados.\n\n\n\nSarcodinos: se caracterizan por tener pseudópodos, que son prolongaciones de la membrana que utilizan para movilizarse y atrapar a sus presas; presentan nutrición heterótrofa.\n\n\n\nCiliados: son protozoos que se movilizan por medio de cilios, que son proyecciones cortas a manera de pelos que generan vibración mediante la cual pueden moverse o generar corrientes en el agua mediante las cuales atrapan su alimento. Viven por lo general en medios acuáticos.\n\n\n\nEsporozoarios: son especies parásitas que no presentan estructuras para la locomoción; son en su mayoría parásitos de vertebrados e invertebrados. Su característica distintiva es que presentan esporas en algún momento de su ciclo de vida, de donde proviene su nombre.",
+    "resumen": "Los protozoos son protistas unicelulares heterótrofos similares a animales. Se clasifican según su locomoción: flagelados (flagelos), sarcodinos (pseudópodos), ciliados (cilios) y esporozoarios (sin locomoción, parásitos con esporas). Viven en agua dulce, como paramecios y amebas.",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "locomoción",
+        "protozoo",
+        "protista",
+        "pseudópodo",
+        "cilio",
+        "parásito",
+        "agua",
+        "membrana",
+        "unicelular",
+        "similar",
+        "animal",
+        "flagelado",
+        "flagelo",
+        "sarcodino",
+        "ciliado"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 7: Prevención Contra Microorganismos (pág. 61)",
+      "seccion": "Sección 2: Salud, Prevención y Bienestar",
+      "conceptos_seleccionados": [
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)",
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Gametogénesis (espermatogénesis y ovogénesis)"
+      ],
+      "criterios_seleccionados": [],
+      "score_max": 0.5693513751029968,
+      "num_conceptos_match": 3
+    }
+  },
+  {
+    "codigo": "6.3",
+    "titulo": "6.3 Las algas",
+    "texto_completo": "Resumen: Las algas son protistas que incluyen desde unicelulares (diatomeas) hasta multicelulares grandes (laminaria). Se clasifican por pigmentos y pared celular: dinoflagelados (dos flagelos), euglenoides (flagelo y cloroplastos), diatomeas (pared de sílice), clorófitas (clorofila), rodófitas (rojas, ficobilina) y feófitas (pardas, fucoxantina).\n\n\n\nIncluyen especies unicelulares como las diatomeas y multicelulares como la laminaria, alga parda que puede alcanzar varios metros de longitud. Algunas presentan pigmentos como clorofilas, ficoeritrinas, ficocianinas y fucoxantinas. La presencia de estos pigmentos y algunas características de la pared celular han permitido agruparlas como se muestra a continuación.\n\n\n\nClasificación de las algas\n\n\n\nDinoflagelados: Unicelulares, traslúcidos, con dos flagelos; gracias a ellos se desplazan girando. Algunos no tienen pared celular y otros poseen placas gruesas de celulosa.\n\n\n\nEuglenoides: Unicelulares, presentan flagelo y cloroplastos. La mayoría habita en aguas dulces poco profundas. Carecen de pared celular y los hay autótrofos y heterótrofos.\n\n\n\nDiatomeas: Presentan una pared celular delgada de sales de sílice. Realizan fotosíntesis mediante clorofila. Almacenan nutrientes en forma de aceites en lugar de carbohidratos.\n\n\n\nClorófitas: Poseen clorofila como pigmento fotosintético principal. Habitan en aguas dulces y también hay especies marinas. Hay especies unicelulares y otras coloniales.\n\n\n\nRodófitas: Algas rojas que contienen ficobilina, pigmento que les da el color rojo característico. Habitan en zonas profundas y son en su mayoría pluricelulares.\n\n\n\nFeófitas: Algas pardas que contienen clorofila y fucoxantina. Incluyen las algas pluricelulares más grandes que habitan en las costas rocosas de áreas frías.",
+    "resumen": "Las algas son protistas que incluyen desde unicelulares (diatomeas) hasta multicelulares grandes (laminaria). Se clasifican por pigmentos y pared celular: dinoflagelados (dos flagelos), euglenoides (flagelo y cloroplastos), diatomeas (pared de sílice), clorófitas (clorofila), rodófitas (rojas, ficobilina) y feófitas (pardas, fucoxantina).",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "pared",
+        "pigmento",
+        "celular",
+        "clorofila",
+        "alga",
+        "flagelo",
+        "unicelular",
+        "diatomea",
+        "rojo",
+        "especie",
+        "multicelular",
+        "laminaria",
+        "cloroplasto",
+        "sílice",
+        "clorófitas"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 2: Explorando la Vida Celular (pág. 14)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)",
+        "Biomoléculas (carbohidratos, lípidos, proteínas, ácidos nucleicos)"
+      ],
+      "criterios_seleccionados": [
+        "Diferenciar células y tejidos que conforman a seres vivos.",
+        "Explicar la importancia del ciclo celular y tipos de reproducción.",
+        "Identificar aportes de la tecnología al estudio celular."
+      ],
+      "score_max": 0.564449667930603,
+      "num_conceptos_match": 3
+    }
+  },
+  {
+    "codigo": "6.4",
+    "titulo": "6.4 Los mohos acuáticos o mucilaginosos",
+    "texto_completo": "Resumen: Los mohos acuáticos son protistas que parecen hongos pero sin quitina en la pared celular. Se dividen en mixomicetos (acelulares, forman plasmodios), acrasiomicetos (celulares, se arrastran) y oomicetos (filamentosos, parásitos o saprobiontes, con células reproductoras flageladas).\n\n\n\nSon protistas que a simple vista son similares a los hongos; sin embargo, no lo son gracias a sus características bioquímicas de su pared celular, que no tiene quitina. Se distinguen tres grupos de mohos dentro de los protistas.\n\n\n\nMixomicetos o mohos mucilaginosos acelulares: son mohos mucilaginosos o deslizantes; se caracterizan por la ausencia de pared celular y por formar plasmodios, que son células multinucleadas formadas por la fusión de varias células. Presentan una textura gelatinosa que ayuda a que el moho se deslice por la superficie donde se encuentra.\n\n\n\nAcrasiomicetos o mohos mucilaginosos celulares: son mohos que se arrastran en suelos ricos y húmedos y pasan la mayor parte de su ciclo vital como células ameboides individuales sin flagelos. Producen una sustancia llamada acrasina.\n\n\n\nOomicetos: a este grupo pertenecen los mohos acuáticos. Son protistas filamentosos; pueden ser parásitos o saprobiontes, es decir, que se alimentan de materia orgánica en descomposición. Difieren de los hongos ya que presentan células reproductoras flageladas.",
+    "resumen": "Los mohos acuáticos son protistas que parecen hongos pero sin quitina en la pared celular. Se dividen en mixomicetos (acelulares, forman plasmodios), acrasiomicetos (celulares, se arrastran) y oomicetos (filamentosos, parásitos o saprobiontes, con células reproductoras flageladas).",
+    "metadatos": {
+      "palabras_clave_nlp": [
+        "moho",
+        "celular",
+        "célula",
+        "protista",
+        "hongo",
+        "pared",
+        "mucilaginoso",
+        "acuático",
+        "mixomicetos",
+        "acelular",
+        "plasmodio",
+        "oomiceto",
+        "filamentoso",
+        "parásito",
+        "saprobiont"
+      ]
+    },
+    "topic_id": 1,
+    "topic_prob": 1.0,
+    "topic_keywords": [
+      "de",
+      "en",
+      "se",
+      "son",
+      "que"
+    ],
+    "curriculum": {
+      "tema": "Tema 2: Explorando la Vida Celular (pág. 14)",
+      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
+      "conceptos_seleccionados": [
+        "Tipos de células (procariota, eucariota; animal, vegetal)",
+        "Biomoléculas (carbohidratos, lípidos, proteínas, ácidos nucleicos)",
+        "Estructura y función de organelos celulares",
+        "Tipos de microorganismos (virus, bacterias, hongos, protozoos)"
+      ],
+      "criterios_seleccionados": [
+        "Diferenciar células y tejidos que conforman a seres vivos.",
+        "Explicar la importancia del ciclo celular y tipos de reproducción.",
+        "Identificar aportes de la tecnología al estudio celular."
+      ],
+      "score_max": 0.5201663970947266,
+      "num_conceptos_match": 4
+    }
+  }
+]

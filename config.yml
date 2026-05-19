@@ -1,0 +1,8 @@
+# config.yml
+logging:
+  level: "INFO"
+  rotation: "10 MB"          # o "1 day"
+  retention: "30 days"
+  compression: "gz"
+  file: "/app/logs/rag_service.log"
+  console: true
