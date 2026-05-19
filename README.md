@@ -138,3 +138,5 @@ cd .. && docker compose up -d
 | `GET` | `/health` | Estado del servicio |
 
 Ver `DOCUMENTACION.md` para detalles completos de la API.
+
+---
