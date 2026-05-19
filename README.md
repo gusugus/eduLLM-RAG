@@ -127,7 +127,7 @@ cd .. && docker compose up -d
 | Servicio | Puerto |
 |---|---|
 | RAG API | `http://localhost:8002` |
-| Qdrant REST | `http://localhost:6333` |
+| Qdrant REST | `http://localhost:6333` ([Dashboard](http://localhost:6333/dashboard)) |
 | Qdrant gRPC | `localhost:6334` |
 
 ## Endpoints disponibles

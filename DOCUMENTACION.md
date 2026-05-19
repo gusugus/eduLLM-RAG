@@ -403,7 +403,7 @@ curl -X POST http://localhost:8002/query \
 | Servicio | Puerto Host | Puerto Interno | Protocolo |
 |---|---|---|---|
 | `rag-api` | `8002` | `8000` | HTTP/REST |
-| `qdrant-server` | `6333` | `6333` | HTTP/REST |
+| `qdrant-server` | `6333` | `6333` | HTTP/REST ([Dashboard](http://localhost:6333/dashboard)) |
 | `qdrant-server` | `6334` | `6334` | gRPC |
 
 ### Volúmenes Docker
