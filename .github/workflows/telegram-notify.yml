@@ -1,0 +1,65 @@
+name: Notificaciones de Telegram para Pull Requests
+
+# Eventos que activan el workflow. Escuchamos dos tipos de PR.
+on:
+  pull_request:
+    types: [opened, closed, review_requested]
+
+jobs:
+  # Notificación para cuando se ABRE un PR
+  notify-pr-open:
+    if: github.event.action == 'opened'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram message on PR open
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            🟢 **Nuevo Pull Request Abierto**
+            📚 Repositorio: ${{ github.repository }}
+            📝 Título: ${{ github.event.pull_request.title }}
+            👤 Autor: ${{ github.event.pull_request.user.login }}
+            🔗 Enlace: ${{ github.event.pull_request.html_url }}
+
+  # Notificación para cuando se CIERRA un PR
+  notify-pr-close:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram message on PR close
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            🔴 **Pull Request Cerrado**
+            📚 Repositorio: ${{ github.repository }}
+            📝 Título: ${{ github.event.pull_request.title }}
+            👤 Autor: ${{ github.event.pull_request.user.login }}
+            🔗 Enlace: ${{ github.event.pull_request.html_url }}
+
+  # Notificación y mención para cuando se SOLICITA una REVISIÓN
+  notify-pr-review-requested:
+    if: github.event.action == 'review_requested'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get PR reviewers list from GitHub API
+        id: get_reviewers
+        run: |
+          REVIEWERS="${{ join(github.event.pull_request.requested_reviewers.*.login, ', ') }}"
+          echo "reviewers_list=${REVIEWERS}" >> $GITHUB_OUTPUT
+
+      - name: Send Telegram message with reviewer mentions
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            👀 **Se ha solicitado una revisión de código**
+            📚 Repositorio: ${{ github.repository }}
+            📝 Título: ${{ github.event.pull_request.title }}
+            👤 Autor: ${{ github.event.pull_request.user.login }}
+            👥 Revisor(es): ${{ steps.get_reviewers.outputs.reviewers_list || 'No especificado' }}
+            🔗 Enlace: ${{ github.event.pull_request.html_url }}
