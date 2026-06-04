@@ -1,8 +1,15 @@
-# config.yml
+qdrant:
+  host: localhost
+  port: 6333
+  collection_name: rag_biologia
+
+embedding:
+  model_name: BAAI/bge-small-en-v1.5
+
 logging:
-  level: "INFO"
-  rotation: "10 MB"          # o "1 day"
-  retention: "30 days"
-  compression: "gz"
-  file: "/app/logs/rag_service.log"
+  level: INFO
+  file: ./logs/rag_service.log
+  rotation: 10 MB
+  retention: 30 days
+  compression: gz
   console: true
