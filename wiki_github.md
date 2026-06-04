@@ -9,7 +9,7 @@
 # RAG EduLLM
 
 Microservicio de búsqueda semántica para contenido educativo de Biología.
-Parte del ecosistema **MindBuzz / EduLLM**.
+Parte del ecosistema **EduLLM / MindBuzz**.
 
 ## ¿Qué hace este servicio?
 
@@ -21,11 +21,14 @@ Dado un texto de consulta (una pregunta del alumno o del sistema), busca en una 
 
 | Componente | Tecnología |
 |---|---|
-| API | FastAPI + Uvicorn |
+| API | FastAPI + Uvicorn (Python 3.11) |
 | Base de datos vectorial | Qdrant |
-| Modelo de embeddings | BAAI/bge-small-en-v1.5 (fastembed, sin GPU) |
-| Logging | Loguru con rotación automática |
+| Modelo de embeddings | BAAI/bge-small-en-v1.5 (fastembed, ONNX, sin GPU) |
+| Seguridad | pywebguard (rate limiting, IP filtering) |
+| Observabilidad | OpenTelemetry → Grafana Alloy (OTLP/gRPC) |
+| Logging | Loguru + structlog con rotación automática |
 | Infraestructura | Docker + Docker Compose |
+| CI/CD | GitHub Actions (notificaciones Telegram) |
 
 ## Páginas de esta wiki
 
@@ -33,24 +36,35 @@ Dado un texto de consulta (una pregunta del alumno o del sistema), busca en una 
 |---|---|
 | [[Configuración]] | Cómo instalar y correr el sistema desde cero |
 | [[API-Reference]] | Endpoints disponibles, parámetros y ejemplos |
-| [[Arquitectura]] | Diagrama del sistema y flujo de datos |
+| [[Arquitectura]] | Diagrama del sistema, componentes y flujo de datos |
+| [[Seguridad-y-Observabilidad]] | Middlewares, rate limiting, OpenTelemetry |
 | [[Cómo-Extender]] | Agregar contenido, cambiar modelos, agregar filtros |
 
 ## Estructura del repositorio
 
 ```
 rag/
-├── api.py                 # Servicio FastAPI (único archivo de producción)
-├── config.yml             # Configuración de logging
-├── requirements.txt       # Dependencias Python
-├── Dockerfile             # Imagen del servicio RAG API
-├── docker-compose.yml     # Orquestación: rag-api + qdrant-server
-├── qdrant/
-│   ├── docker-compose.yml     # Solo Qdrant (para migración inicial)
-│   ├── migrar_a_qdrant.py     # Script one-time de carga de datos
+├── main.py                    # Punto de entrada: FastAPI + middlewares + telemetría
+├── config.yml                 # Configuración de Qdrant, embeddings y logging
+├── requirements.txt           # Dependencias Python
+├── Dockerfile                 # Imagen del servicio (python:3.11-slim)
+├── docker-compose.yml         # Orquestación: rag-api + qdrant-server
+├── api/
+│   └── routes.py              # Endpoints: /query, /health, /admin/*
+├── core/
+│   ├── config.py              # Clase Settings (YAML + env vars)
+│   ├── logging_config.py      # Setup de Loguru
+│   └── models.py              # Schemas Pydantic
+├── services/
+│   ├── embedding_service.py   # Singleton de embeddings (fastembed)
+│   ├── qdrant_service.py      # Cliente Qdrant (CRUD)
+│   └── indexer_service.py     # Carga: JSON → embeddings → Qdrant
+├── scripts/
+│   └── load_to_qdrant.py      # Script CLI de carga
+├── corpus/
 │   └── secciones_completas.json  # Contenido educativo fuente
-├── qdrant_storage/        # Datos persistentes de Qdrant (no editar)
-└── logs/                  # Logs con rotación automática
+├── qdrant_storage/            # Datos persistentes de Qdrant (no editar)
+└── logs/                      # Logs con rotación automática
 ```
 
 ---
@@ -69,83 +83,47 @@ Guía completa para instalar y correr el sistema desde cero.
 
 - **Docker** instalado y corriendo → [Instalar Docker](https://docs.docker.com/get-docker/)
 - **Docker Compose** (incluido en Docker Desktop)
-- **Python 3.11+** — solo para el script de migración inicial
-
-Instalar las dependencias del script de migración:
+- Red Docker para observabilidad:
 
 ```bash
-pip install "qdrant-client[fastembed]"
+docker network create observability-net
 ```
 
 ---
 
 ## Configuración inicial (primera vez)
 
-Estos pasos se hacen **una sola vez** para poblar la base de datos vectorial con el contenido educativo.
-
-### Paso 1 — Levantar Qdrant (servicio temporal para migración)
+### Paso 1 — Levantar el sistema completo
 
 ```bash
-cd qdrant/
-docker compose up -d
-```
-
-Verificar que está corriendo:
-
-```bash
-curl http://localhost:6333/healthz
-```
-
-Respuesta esperada:
-```json
-{"title": "qdrant - vector search engine"}
-```
-
-### Paso 2 — Migrar los datos a Qdrant
-
-Este script lee `qdrant/secciones_completas.json`, genera los embeddings vectoriales y los carga en Qdrant.
-
-```bash
-# Desde la raíz del proyecto
-python qdrant/migrar_a_qdrant.py
-```
-
-Output esperado:
-
-```
-Colección 'rag_biologia' eliminada
-Colección 'rag_biologia' creada
-Subidos 100/142 puntos
-Subidos 142/142 puntos
-✅ Carga completada
-```
-
-> La primera ejecución puede tardar unos minutos porque descarga el modelo de embeddings (~90 MB).
-
-### Paso 3 — Apagar el Qdrant temporal
-
-```bash
-cd qdrant/
-docker compose down
-```
-
-Los datos quedan persistidos en `qdrant_storage/` y se reutilizarán automáticamente.
-
-### Paso 4 — Levantar el sistema completo
-
-```bash
-# Desde la raíz del proyecto
-docker compose up --build
+docker compose up --build -d
 ```
 
 Esto construye la imagen Docker del servicio RAG y levanta dos contenedores:
 - `qdrant-server` — base de datos vectorial en el puerto `6333`
 - `rag-api` — servicio FastAPI en el puerto `8002`
 
-### Paso 5 — Verificar que todo funciona
+### Paso 2 — Cargar el contenido educativo
+
+Usando el endpoint admin (recomendado):
 
 ```bash
-# Healthcheck
+curl -X POST http://localhost:8002/admin/load \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: mi-clave-secreta-para-cargar-datos" \
+  -d '{"recreate": true, "batch_size": 100}'
+```
+
+Alternativa con script CLI:
+```bash
+docker compose exec rag-api python scripts/load_to_qdrant.py
+```
+
+> La primera ejecución puede tardar unos minutos porque descarga el modelo de embeddings (~90 MB).
+
+### Paso 3 — Verificar que todo funciona
+
+```bash
 curl http://localhost:8002/health
 ```
 
@@ -154,13 +132,11 @@ Respuesta esperada:
 {"status": "ok", "collection": "rag_biologia", "points": 142}
 ```
 
-Si `points` es `0`, la migración no fue exitosa — repetir desde el Paso 1.
+Si `points` es `0`, la carga no fue exitosa — repetir el Paso 2.
 
 ---
 
 ## Uso cotidiano
-
-Una vez configurado, solo necesitás:
 
 ```bash
 # Levantar
@@ -184,7 +160,7 @@ docker compose down
 
 ## Variables de entorno
 
-Podés sobreescribir la configuración por defecto en `docker-compose.yml`:
+Configurables en `docker-compose.yml`:
 
 | Variable | Default | Descripción |
 |---|---|---|
@@ -192,6 +168,7 @@ Podés sobreescribir la configuración por defecto en `docker-compose.yml`:
 | `QDRANT_PORT` | `6333` | Puerto REST de Qdrant |
 | `COLLECTION_NAME` | `rag_biologia` | Nombre de la colección |
 | `EMBEDDING_MODEL` | `BAAI/bge-small-en-v1.5` | Modelo de embeddings |
+| `ADMIN_API_KEY` | `mi-clave-secreta-para-cargar-datos` | API key para endpoints admin |
 | `CONFIG_PATH` | `config.yml` | Ruta al archivo de configuración |
 
 ---
@@ -208,11 +185,11 @@ Base URL: `http://localhost:8002`
 
 ---
 
-## POST `/query`
+## Endpoints Públicos
+
+### POST `/query`
 
 Busca los fragmentos de contenido educativo más relevantes para una consulta de texto libre.
-
-### Request
 
 **Headers:**
 ```
@@ -232,19 +209,16 @@ Content-Type: application/json
 | `text` | `string` | ✅ | — | Texto de la consulta en lenguaje natural |
 | `n_results` | `integer` | ❌ | `5` | Cantidad de resultados a devolver |
 
-### Response `200 OK`
-
+**Response `200 OK`:**
 ```json
 [
   {
     "id": "550e8400-e29b-41d4-a716-446655440000",
-    "document": "Clasificación de los seres vivos\nLos seres vivos se clasifican en dominios...\nResumen: La taxonomía de Linneo organiza...",
+    "document": "Clasificación de los seres vivos\nLos seres vivos se clasifican...",
     "metadata": {
       "codigo": "SEC-001",
       "titulo": "Clasificación de los seres vivos",
-      "tema": "Taxonomía",
-      "fuente": "Libro 10mo Ciencias Naturales",
-      "keywords_nlp": ["reino", "filo", "clase", "orden"],
+      "keywords_nlp": ["reino", "filo", "clase"],
       "topic_id": 3,
       "curriculum_tema": "Unidad 1"
     },
@@ -256,36 +230,26 @@ Content-Type: application/json
 | Campo | Tipo | Descripción |
 |---|---|---|
 | `id` | `string` | UUID del punto en Qdrant |
-| `document` | `string` | **Texto completo del fragmento** — este es el que se inyecta en el prompt del LLM |
-| `metadata` | `object` | Metadatos del fragmento (tema, fuente, keywords, etc.) |
-| `score` | `float` | Similitud coseno con la consulta (0.0–1.0, mayor = más relevante) |
+| `document` | `string` | Texto completo del fragmento (se inyecta en el prompt del LLM) |
+| `metadata` | `object` | Metadatos del fragmento |
+| `score` | `float` | Similitud coseno (0.0–1.0, mayor = más relevante) |
 
-### Errores
+**Errores:** `400` texto vacío, `500` error interno.
 
-| Código | Causa |
-|---|---|
-| `400 Bad Request` | El campo `text` está vacío o solo contiene espacios |
-| `500 Internal Server Error` | Qdrant no disponible u otro error interno |
-
-### Ejemplo con curl
-
+**Ejemplo curl:**
 ```bash
 curl -X POST http://localhost:8002/query \
   -H "Content-Type: application/json" \
-  -d '{
-    "text": "diferencia entre mitosis y meiosis",
-    "n_results": 3
-  }'
+  -d '{"text": "diferencia entre mitosis y meiosis", "n_results": 3}'
 ```
 
 ---
 
-## GET `/health`
+### GET `/health`
 
 Verifica que el servicio esté corriendo y conectado a Qdrant.
 
-### Response `200 OK`
-
+**Response `200 OK`:**
 ```json
 {
   "status": "ok",
@@ -294,17 +258,42 @@ Verifica que el servicio esté corriendo y conectado a Qdrant.
 }
 ```
 
-| Campo | Descripción |
-|---|---|
-| `status` | Siempre `"ok"` si el servicio está sano |
-| `collection` | Nombre de la colección activa en Qdrant |
-| `points` | Cantidad de vectores indexados |
+---
 
-### Ejemplo con curl
+## Endpoints de Administración
 
-```bash
-curl http://localhost:8002/health
+Todos requieren el header `X-API-Key` con el valor configurado en `ADMIN_API_KEY`.
+
+### POST `/admin/load`
+
+Carga datos desde un archivo JSON a Qdrant. Se ejecuta como background task.
+
+**Body:**
+```json
+{
+  "json_path": null,
+  "recreate": true,
+  "batch_size": 100
+}
 ```
+
+**Response `200`:** `{"status": "loading_started", ...}`
+
+**Ejemplo:**
+```bash
+curl -X POST http://localhost:8002/admin/load \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: mi-clave-secreta-para-cargar-datos" \
+  -d '{"recreate": true}'
+```
+
+### GET `/admin/load/status`
+
+Retorna disponibilidad del endpoint y existencia del JSON por defecto.
+
+### GET `/admin/info`
+
+Retorna información del sistema: rutas, estado de Qdrant y corpus.
 
 ---
 
@@ -321,24 +310,23 @@ curl http://localhost:8002/health
 ```
   ┌──────────────────────────────────────┐
   │          Cliente / Proxy LLM         │
-  │   (hace POST /query con la pregunta) │
   └─────────────────┬────────────────────┘
-                    │
-                    │  POST http://localhost:8002/query
-                    │  Body: { "text": "...", "n_results": 5 }
+                    │  POST /query
                     ▼
   ┌──────────────────────────────────────┐
-  │         RAG API — api.py             │
-  │         FastAPI + Uvicorn :8002      │
+  │     main.py (FastAPI App :8002)      │
   │                                      │
-  │  1. Recibe la consulta en texto      │
-  │  2. Genera embedding (384 dims)      │
-  │     con BAAI/bge-small-en-v1.5       │
-  │  3. Consulta Qdrant por similitud    │
-  │  4. Retorna top-K fragmentos + score │
+  │  Middlewares:                         │
+  │   ├─ TrustedHostMiddleware           │
+  │   ├─ FastAPIGuard (pywebguard)       │
+  │   └─ FastAPIInstrumentor (OTel)      │
+  │                                      │
+  │  Router → api/routes.py             │
+  │   ├─ EmbeddingService (Singleton)    │
+  │   ├─ QdrantService                   │
+  │   └─ IndexerService                  │
   └─────────────────┬────────────────────┘
-                    │
-                    │  HTTP REST :6333
+                    │  HTTP :6333
                     ▼
   ┌──────────────────────────────────────┐
   │         Qdrant Server :6333          │
@@ -348,18 +336,29 @@ curl http://localhost:8002/health
   └──────────────────────────────────────┘
 ```
 
-## Flujo de indexación (one-time setup)
+## Capas del código
 
 ```
-secciones_completas.json
+main.py                    → App + middlewares + telemetría
+  └─ api/routes.py         → Endpoints (presentación)
+       ├─ core/models.py   → Schemas Pydantic
+       ├─ core/config.py   → Settings (YAML + env vars)
+       └─ services/        → Lógica de negocio
+            ├─ embedding_service.py   (Singleton, fastembed)
+            ├─ qdrant_service.py      (cliente Qdrant)
+            └─ indexer_service.py     (orquestación de carga)
+```
+
+## Flujo de indexación (carga de datos)
+
+```
+corpus/secciones_completas.json
          │
-         │  Cada sección tiene: titulo, texto_completo, resumen, metadatos
          ▼
-migrar_a_qdrant.py
-         │
-         ├─ Construye texto = titulo + texto_completo + resumen
-         ├─ fastembed.embed(texto)  →  vector[384]
-         └─ qdrant.upsert(id=UUID, vector, payload)  →  Qdrant :6333
+IndexerService.load_from_json()
+         ├─ texto = titulo + texto_completo + resumen
+         ├─ EmbeddingService.embed_one(texto) → vector[384]
+         └─ QdrantService.upsert_points(batch=100) → Qdrant
 ```
 
 ## Flujo de consulta (tiempo real)
@@ -368,34 +367,17 @@ migrar_a_qdrant.py
 POST /query { text: "¿Qué es la mitosis?" }
          │
          ▼
-api.py
-         ├─ embedding_model.embed(text)  →  query_vector[384]
-         ├─ qdrant.query_points(query_vector, limit=n_results)
+api/routes.py → query_rag()
+         ├─ EmbeddingService.embed_one(text) → query_vector[384]
+         ├─ QdrantService.search(query_vector, limit)
          └─ return [ { id, document, metadata, score }, ... ]
-```
-
-## Estructura de un punto en Qdrant
-
-```
-PointStruct
-├── id            → UUID único
-├── vector[384]   → Embedding del texto (BAAI/bge-small-en-v1.5)
-└── payload
-    ├── document       ← Texto completo (lo que devuelve /query)
-    ├── codigo         ← ID de la sección (ej: "SEC-001")
-    ├── titulo         ← Título legible
-    ├── tema           ← Tema curricular
-    ├── fuente         ← Libro o material de origen
-    ├── keywords_nlp   ← Lista de palabras clave (NLP)
-    ├── topic_id       ← Clúster BERTopic
-    └── curriculum_tema← Unidad curricular
 ```
 
 ## Contenedores Docker
 
 | Contenedor | Imagen | Puerto externo | Puerto interno |
 |---|---|---|---|
-| `rag-api` | Dockerfile local | `8002` | `8000` |
+| `rag-api` | Dockerfile local | `8002` (localhost) | `8000` |
 | `qdrant-server` | `qdrant/qdrant:latest` | `6333` | `6333` |
 | `qdrant-server` | `qdrant/qdrant:latest` | `6334` (gRPC) | `6334` |
 
@@ -403,7 +385,52 @@ PointStruct
 
 ---
 
-## PÁGINA 5 → título: `Cómo-Extender`
+## PÁGINA 5 → título: `Seguridad-y-Observabilidad`
+
+---
+
+# Seguridad y Observabilidad
+
+## Seguridad
+
+### pywebguard (FastAPIGuard)
+
+Middleware de seguridad configurado en `main.py`:
+
+| Feature | Configuración |
+|---|---|
+| IP Whitelist | `127.0.0.1`, `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16` |
+| IP Blacklist | `0.0.0.0/8`, `169.254.0.0/16` |
+| Rate Limiting | 100 req/min, burst 20 |
+| Auto-ban | 200 requests → ban 5 minutos |
+| Anti-penetración | Disponible pero deshabilitado |
+
+### TrustedHostMiddleware
+
+Solo acepta requests de hosts: `localhost`, `127.0.0.1`, `rag-api`, `auth-ms`, `*.internal.local`.
+
+### API Key (Admin)
+
+Endpoints `/admin/*` requieren header `X-API-Key`. Configurable con variable `ADMIN_API_KEY`.
+
+## Observabilidad (OpenTelemetry)
+
+Trazas y logs se envían a Grafana Alloy vía OTLP/gRPC.
+
+| Componente | Detalle |
+|---|---|
+| Endpoint | `alloy:4317` (gRPC, insecure) |
+| Service name | `rag-api` |
+| Trazas | `OTLPSpanExporter` → `BatchSpanProcessor` |
+| Logs | `OTLPLogExporter` → `BatchLogRecordProcessor` |
+| Instrumentación | `FastAPIInstrumentor` (auto) |
+| Red Docker | `observability-net` (externa) |
+
+---
+
+---
+
+## PÁGINA 6 → título: `Cómo-Extender`
 
 ---
 
@@ -413,132 +440,83 @@ PointStruct
 
 ## Agregar o actualizar contenido educativo
 
-El contenido fuente está en `qdrant/secciones_completas.json`.
-
-1. Editar el JSON con las nuevas secciones (mismo formato que el existente).
-2. Re-ejecutar la migración:
+1. Editar `corpus/secciones_completas.json` con las nuevas secciones.
+2. Cargar vía API:
 
 ```bash
-# Levantar Qdrant temporal
-cd qdrant/
-docker compose up -d
-
-# Re-indexar (borra y recrea la colección)
-python qdrant/migrar_a_qdrant.py
-
-# Bajar Qdrant temporal
-docker compose down
-
-# Volver a levantar el sistema completo
-cd ..
-docker compose up -d
+curl -X POST http://localhost:8002/admin/load \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: mi-clave-secreta-para-cargar-datos" \
+  -d '{"recreate": true}'
 ```
 
-3. Verificar con `GET /health` que `points` aumentó.
+3. Verificar con `GET /health` que `points` refleja el nuevo total.
 
 ---
 
 ## Cambiar el modelo de embeddings
 
-> ⚠️ **Importante:** cambiar el modelo requiere re-indexar toda la colección porque las dimensiones del vector cambian.
+> ⚠️ Cambiar el modelo requiere re-indexar toda la colección.
 
-1. Editar `docker-compose.yml`, agregar la variable de entorno al servicio `rag-api`:
+1. Editar `docker-compose.yml`, agregar variable:
    ```yaml
    environment:
      - EMBEDDING_MODEL=nombre/del-nuevo-modelo
    ```
-
-2. En `qdrant/migrar_a_qdrant.py`, actualizar el `size` de la colección según las dimensiones del nuevo modelo:
-   ```python
-   client.create_collection(
-       collection_name=COLLECTION_NAME,
-       vectors_config=VectorParams(size=768, distance=Distance.COSINE)  # ← cambiar
-   )
-   ```
-
-3. Actualizar también el `model_name` en el script:
-   ```python
-   embedding_model = TextEmbedding(model_name="nombre/del-nuevo-modelo")
-   ```
-
-4. Re-ejecutar la migración completa (ver sección anterior).
+2. Re-cargar datos con `POST /admin/load` (recreate=true). El `IndexerService` detecta automáticamente las dimensiones.
+3. Reiniciar: `docker compose restart rag-api`.
 
 ---
 
 ## Agregar un nuevo campo al payload
 
-1. Editar `qdrant/migrar_a_qdrant.py`, agregar el campo en el dict `payload`:
+1. Editar `services/indexer_service.py`, agregar el campo en el dict `payload`:
    ```python
    payload = {
        "document": texto_indexable,
-       "codigo": sec.get('codigo', ''),
        # ... campos existentes ...
-       "nuevo_campo": sec.get('nuevo_campo', ''),  # ← agregar acá
+       "nuevo_campo": sec.get('nuevo_campo', ''),
    }
    ```
-
-2. Re-ejecutar la migración.
-
-3. El nuevo campo aparece automáticamente en `metadata` de la respuesta de `/query` — no hay que tocar `api.py`.
+2. Re-cargar datos.
+3. El campo aparece automáticamente en `metadata` de `/query`.
 
 ---
 
-## Agregar filtros por metadata en las consultas
+## Agregar filtros por metadata
 
-La API actual no tiene filtros. Para agregar, por ejemplo, filtrar por `tema`:
+1. Extender `QueryRequest` en `core/models.py`:
+   ```python
+   class QueryRequest(BaseModel):
+       text: str
+       n_results: int = 5
+       tema: str | None = None
+   ```
 
-**1. Extender el schema en `api.py`:**
-```python
-class QueryRequest(BaseModel):
-    text: str
-    n_results: int = 5
-    tema: str | None = None  # ← nuevo campo opcional
-```
+2. Construir filtro en `api/routes.py`:
+   ```python
+   from qdrant_client.models import Filter, FieldCondition, MatchValue
 
-**2. Construir el filtro de Qdrant en el endpoint:**
-```python
-from qdrant_client.models import Filter, FieldCondition, MatchValue
+   query_filter = None
+   if request.tema:
+       query_filter = Filter(
+           must=[FieldCondition(key="tema", match=MatchValue(value=request.tema))]
+       )
+   ```
 
-@app.post("/query", response_model=List[ResultItem])
-async def query_rag(request: QueryRequest):
-    query_embedding = list(embedding_model.embed([request.text]))[0]
-    
-    query_filter = None
-    if request.tema:
-        query_filter = Filter(
-            must=[FieldCondition(key="tema", match=MatchValue(value=request.tema))]
-        )
-    
-    results = qdrant_client.query_points(
-        collection_name=COLLECTION_NAME,
-        query=query_embedding.tolist(),
-        limit=request.n_results,
-        query_filter=query_filter,  # ← agregar acá
-        with_payload=True
-    ).points
-    ...
-```
-
-**Ejemplo de uso con filtro:**
-```bash
-curl -X POST http://localhost:8002/query \
-  -H "Content-Type: application/json" \
-  -d '{"text": "reproducción celular", "n_results": 3, "tema": "Biología Celular"}'
-```
+3. Pasar `query_filter` a `qdrant_service.search()`.
 
 ---
 
 ## Cambiar el nivel de logging
 
 Editar `config.yml`:
-
 ```yaml
 logging:
-  level: "DEBUG"   # DEBUG | INFO | WARNING | ERROR
+  level: "DEBUG"
 ```
 
-Reiniciar el contenedor para aplicar el cambio:
-
+Reiniciar:
 ```bash
 docker compose restart rag-api
 ```

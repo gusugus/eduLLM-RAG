@@ -1,98 +1,73 @@
-# RAG EduLLM — Guía de Configuración
+# RAG EduLLM
 
-Servicio de búsqueda semántica (RAG) para contenido educativo de Biología.  
-Usa **Qdrant** como base de datos vectorial y **FastAPI** como API REST.
+Microservicio de búsqueda semántica (**RAG — Retrieval-Augmented Generation**) para contenido educativo de Biología.  
+Parte del ecosistema **EduLLM / MindBuzz**.
+
+> **El servicio no genera texto.** Solo recupera los fragmentos de contenido más relevantes para inyectarlos en el prompt de un LLM. La generación la hace el modelo de lenguaje.
 
 ---
 
-## Requisitos previos
+## Stack Tecnológico
+
+| Capa | Tecnología | Versión / Detalle |
+|---|---|---|
+| **Framework web** | [FastAPI](https://fastapi.tiangolo.com/) + [Uvicorn](https://www.uvicorn.org/) | Python 3.11, servidor ASGI |
+| **Base de datos vectorial** | [Qdrant](https://qdrant.tech/) | Imagen Docker `qdrant/qdrant:latest` |
+| **Embeddings** | [fastembed](https://github.com/qdrant/fastembed) — `BAAI/bge-small-en-v1.5` | 384 dimensiones, ONNX, sin GPU |
+| **Seguridad** | [pywebguard](https://pypi.org/project/pywebguard/) ≥1.0.26 | Rate limiting, IP filtering, protección anti-penetración |
+| **Observabilidad** | [OpenTelemetry](https://opentelemetry.io/) SDK 1.27.0 | Trazas + logs → Grafana Alloy (OTLP/gRPC) |
+| **Logging** | [Loguru](https://github.com/Delgan/loguru) + [structlog](https://www.structlog.org/) | Rotación automática, consola + archivo |
+| **Infraestructura** | Docker + Docker Compose | Orquestación de `rag-api` + `qdrant-server` |
+| **CI/CD** | GitHub Actions | Notificaciones Telegram en PRs |
+
+---
+
+## Requisitos Previos
 
 - [Docker](https://docs.docker.com/get-docker/) instalado y corriendo
 - [Docker Compose](https://docs.docker.com/compose/install/) (incluido en Docker Desktop)
-- Python 3.11+ (solo para el script de migración)
-- Dependencias Python para el script de migración:
-
-```bash
-pip install "qdrant-client[fastembed]"
-```
+- Red Docker `observability-net` creada manualmente (para telemetría):
+  ```bash
+  docker network create observability-net
+  ```
+- Python 3.11+ (solo para scripts de carga local, no necesario en producción)
 
 ---
 
-## Configuración inicial (primera vez)
+## Inicio Rápido
 
-Estos pasos solo se hacen **una vez** para poblar la base de datos vectorial.
-
-### Paso 1 — Levantar Qdrant solo (para la migración)
+### 1. Levantar el sistema completo
 
 ```bash
-cd qdrant/
-docker compose up -d
-```
-
-Verificar que está corriendo:
-```bash
-curl http://localhost:6333/healthz
-# Respuesta esperada: {"title":"qdrant - vector search engine"}
-```
-
-### Paso 2 — Migrar los datos a Qdrant
-
-Este script lee `qdrant/secciones_completas.json`, genera los embeddings y los carga en Qdrant.
-
-```bash
-# Desde la raíz del proyecto
-python qdrant/migrar_a_qdrant.py
-```
-
-Output esperado:
-```
-Colección 'rag_biologia' creada
-Subidos 100/142 puntos
-Subidos 142/142 puntos
-✅ Carga completada
-```
-
-### Paso 3 — Apagar el Qdrant temporal
-
-```bash
-cd qdrant/
-docker compose down
-```
-
-> Los datos quedan persistidos en `qdrant_storage/` y se reutilizarán en el siguiente paso.
-
-### Paso 4 — Levantar el sistema completo (primera vez, con build)
-
-```bash
-# Desde la raíz del proyecto
-docker compose up --build
+docker compose up --build -d
 ```
 
 Esto construye la imagen del servicio RAG y levanta:
 - `qdrant-server` en el puerto `6333`
 - `rag-api` en el puerto `8002`
 
----
+### 2. Cargar el contenido educativo (primera vez)
 
-## Uso normal (después de la configuración inicial)
+El sistema incluye un endpoint admin para cargar datos sin salir del contenedor:
 
 ```bash
-docker compose up -d
+curl -X POST http://localhost:8002/admin/load \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: mi-clave-secreta-para-cargar-datos" \
+  -d '{"recreate": true, "batch_size": 100}'
 ```
 
-Para detenerlo:
-```bash
-docker compose down
-```
+> **Alternativa CLI:** También puedes cargar datos con el script:
+> ```bash
+> docker compose exec rag-api python scripts/load_to_qdrant.py
+> ```
 
----
-
-## Verificar que funciona
+### 3. Verificar que funciona
 
 ```bash
-# Healthcheck del servicio RAG
+# Healthcheck
 curl http://localhost:8002/health
-# Respuesta: {"status":"ok","collection":"rag_biologia","points":142}
+# → {"status":"ok","collection":"rag_biologia","points":142}
 
 # Consulta de prueba
 curl -X POST http://localhost:8002/query \
@@ -102,39 +77,119 @@ curl -X POST http://localhost:8002/query \
 
 ---
 
-## Actualizar el contenido educativo
-
-Si se modifica `qdrant/secciones_completas.json` con nuevo contenido:
+## Uso Normal (día a día)
 
 ```bash
-# 1. Levantar Qdrant temporal
-cd qdrant/ && docker compose up -d
+# Levantar
+docker compose up -d
 
-# 2. Re-ejecutar la migración (borra y recrea la colección)
-python qdrant/migrar_a_qdrant.py
-
-# 3. Bajar Qdrant temporal
+# Detener
 docker compose down
-
-# 4. Volver a levantar el sistema completo
-cd .. && docker compose up -d
 ```
+
+---
+
+## Estructura del Proyecto
+
+```
+rag/
+├── main.py                     # Punto de entrada: FastAPI app + middlewares + telemetría
+├── config.yml                  # Configuración de Qdrant, embeddings y logging
+├── requirements.txt            # Dependencias Python
+├── Dockerfile                  # Imagen Docker (python:3.11-slim)
+├── docker-compose.yml          # Orquestación: rag-api + qdrant-server
+│
+├── api/                        # Capa de presentación (endpoints)
+│   ├── __init__.py
+│   └── routes.py               # Endpoints: /query, /health, /admin/*
+│
+├── core/                       # Configuración y modelos transversales
+│   ├── __init__.py
+│   ├── config.py               # Clase Settings (YAML + env vars)
+│   ├── logging_config.py       # Setup de Loguru
+│   └── models.py               # Schemas Pydantic (QueryRequest, ResultItem)
+│
+├── services/                   # Lógica de negocio
+│   ├── __init__.py
+│   ├── embedding_service.py    # Singleton — genera embeddings con fastembed
+│   ├── qdrant_service.py       # Cliente Qdrant (CRUD de colecciones y puntos)
+│   └── indexer_service.py      # Orquesta carga JSON → embeddings → Qdrant
+│
+├── scripts/                    # Utilidades CLI
+│   └── load_to_qdrant.py       # Script de carga independiente (argparse)
+│
+├── corpus/                     # Datos fuente
+│   └── secciones_completas.json  # Contenido educativo (84 KB, ~142 secciones)
+│
+├── qdrant_storage/             # Volumen persistente de Qdrant (NO editar)
+├── logs/                       # Logs con rotación automática
+│
+└── .github/
+    └── workflows/
+        └── telegram-notify.yml # Notificaciones Telegram para PRs
+```
+
+---
+
+## Endpoints de la API
+
+**Base URL:** `http://localhost:8002`
+
+### Endpoints Públicos
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/query` | Busca fragmentos relevantes por texto |
+| `GET` | `/health` | Estado del servicio y conteo de vectores |
+
+### Endpoints de Administración (requieren `X-API-Key`)
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/admin/load` | Carga datos desde JSON a Qdrant (background task) |
+| `GET` | `/admin/load/status` | Estado del endpoint de carga |
+| `GET` | `/admin/info` | Info del sistema: paths, Qdrant, corpus |
+
+> Ver [DOCUMENTACION.md](DOCUMENTACION.md) para detalles completos de request/response de cada endpoint.
 
 ---
 
 ## Puertos
 
-| Servicio | Puerto |
-|---|---|
-| RAG API | `http://localhost:8002` |
-| Qdrant REST | `http://localhost:6333` ([Dashboard](http://localhost:6333/dashboard)) |
-| Qdrant gRPC | `localhost:6334` |
+| Servicio | Puerto Host | Puerto Interno | Protocolo |
+|---|---|---|---|
+| RAG API (FastAPI) | `8002` (solo localhost) | `8000` | HTTP/REST |
+| Qdrant REST | `6333` | `6333` | HTTP/REST ([Dashboard](http://localhost:6333/dashboard)) |
+| Qdrant gRPC | `6334` | `6334` | gRPC |
 
-## Endpoints disponibles
+---
 
-| Método | Ruta | Descripción |
+## Variables de Entorno
+
+Las variables de entorno **sobreescriben** los valores de `config.yml`.
+
+| Variable | Valor por defecto | Descripción |
 |---|---|---|
-| `POST` | `/query` | Busca fragmentos relevantes por texto |
-| `GET` | `/health` | Estado del servicio |
+| `QDRANT_HOST` | `qdrant-server` | Host del servidor Qdrant |
+| `QDRANT_PORT` | `6333` | Puerto REST de Qdrant |
+| `COLLECTION_NAME` | `rag_biologia` | Nombre de la colección vectorial |
+| `EMBEDDING_MODEL` | `BAAI/bge-small-en-v1.5` | Modelo de embeddings |
+| `ADMIN_API_KEY` | `mi-clave-secreta-para-cargar-datos` | API key para endpoints admin |
+| `CONFIG_PATH` | `config.yml` | Ruta al archivo de configuración |
 
-Ver `DOCUMENTACION.md` para detalles completos de la API.
+> ⚠️ **Cambiar `ADMIN_API_KEY` en producción** — el valor por defecto es solo para desarrollo.
+
+---
+
+## Documentación Adicional
+
+| Documento | Contenido |
+|---|---|
+| [DOCUMENTACION.md](DOCUMENTACION.md) | Documentación técnica completa: arquitectura, API detallada, modelo de datos, flujos, extensibilidad |
+| [wiki_github.md](wiki_github.md) | Contenido para la Wiki de GitHub (5 páginas) |
+
+---
+
+## Licencia
+
+Proyecto open-source del ecosistema EduLLM.

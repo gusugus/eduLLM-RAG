@@ -8,22 +8,31 @@ services:
     volumes:
       - ./qdrant_storage:/qdrant/storage
     restart: unless-stopped
+    networks:
+      - default   # red interna para microservicios
 
   rag-api:
     build: .
     container_name: rag-api
-    ports:
-      - "8002:8000"
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    #ports:
+    #  - "127.0.0.1:8002:8000"
     environment:
       - QDRANT_HOST=qdrant-server
       - QDRANT_PORT=6333
       - COLLECTION_NAME=rag_biologia
-    # volumes:                              # Opcional: si tienes config.yml para logs
-    #   - ./config.yml:/app/config.yml
+      - ADMIN_API_KEY=mi-clave-secreta-para-cargar-datos
     volumes:
-      - .:/app                     # Monta TODO el directorio actual dentro de /app
+      - .:/app                   
       - ./logs:/app/logs
       - ./config.yml:/app/config.yml
     depends_on:
       - qdrant-server
     restart: unless-stopped
+    networks:
+      - default          # para comunicarse con qdrant
+      - observability-net # para enviar trazas a Alloy
+
+networks:
+  observability-net:
+    external: true   # porque ya la creamos manualmente
