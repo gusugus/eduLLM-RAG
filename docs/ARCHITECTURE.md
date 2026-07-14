@@ -120,7 +120,7 @@ Responsabilidad: Crear la app FastAPI, configurar middlewares y telemetría.
 
 | Archivo | Responsabilidad |
 |---------|----------------|
-| `embedding_service.py` | Singleton que carga el modelo FastEmbed y expone `embed()` / `embed_one()`. |
+| `embedding_service.py` | Singleton que carga el modelo FastEmbed (lazy init en `__init__` con flag `_initialized`) y expone `embed()` / `embed_one()`. |
 | `qdrant_service.py` | CRUD contra Qdrant: crear/eliminar colecciones, upsert de puntos, búsqueda vectorial. |
 | `indexer_service.py` | Orquesta la carga de datos: lee JSON → genera embeddings → inserta en Qdrant en lotes. |
 
@@ -130,7 +130,8 @@ Responsabilidad: Crear la app FastAPI, configurar middlewares y telemetría.
 
 | Archivo | Responsabilidad |
 |---------|----------------|
-| `load_to_qdrant.py` | Script CLI con `argparse` para carga masiva de datos del corpus a Qdrant. |
+| `load_to_qdrant.py` | Script CLI con `argparse` para carga masiva de datos del corpus a Qdrant. Resuelve la raíz del proyecto dinámicamente para imports absolutos. |
+| `enriquecer_curriculum/` | Pipeline de enriquecimiento de secciones educativas (ver su [README](../scripts/enriquecer_curriculum/README.md)). |
 
 ---
 
@@ -206,8 +207,8 @@ El orden de ejecución de los middlewares es (de afuera hacia adentro):
 
 ## Última revisión
 
-- **Fecha:** 2026-05-24
-- **Commit:** `5cfbd82`
+- **Fecha:** 2026-06-12
+- **Commit:** `(pendiente)`
 
 ## Instrucciones para actualizar este doc
 

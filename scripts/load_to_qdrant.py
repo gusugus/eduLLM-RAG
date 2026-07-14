@@ -1,17 +1,10 @@
 #!/usr/bin/env python
 import sys
 from pathlib import Path
-from core.logging_config import setup_logging
-from services.qdrant_service import QdrantService
-from services.embedding_service import EmbeddingService
-from services.indexer_service import IndexerService
-from loguru import logger
-import argparse
 
 # Obtener la raíz del proyecto buscando el archivo main.py
 def get_project_root():
     current = Path(__file__).resolve()
-    # Sube hasta encontrar main.py o llegar a /
     while current != current.parent:
         if (current / "main.py").exists():
             return current
@@ -19,12 +12,19 @@ def get_project_root():
     raise RuntimeError("No se encontró main.py en la jerarquía")
 
 PROJECT_ROOT = get_project_root()
-sys.path.insert(0, str(PROJECT_ROOT))  # Añadir al path
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from core.logging_config import setup_logging
+from services.qdrant_service import QdrantService
+from services.embedding_service import EmbeddingService
+from services.indexer_service import IndexerService
+from loguru import logger
+import argparse
 
 
 
 def get_default_json_path():
-    return str(PROJECT_ROOT / "corpus" / "secciones_completas.json")
+    return str("/home/gusgus/Documentos/rag/corpus/secciones_completas.json")
 
 def main():
     parser = argparse.ArgumentParser(description="Cargar secciones a Qdrant")

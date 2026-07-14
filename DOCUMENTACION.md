@@ -207,14 +207,16 @@ Gestiona todos los endpoints con inyección de dependencias (FastAPI `Depends`).
 ```json
 {
   "text": "¿Cómo se clasifica un organismo según la taxonomía de Linneo?",
-  "n_results": 5
+  "n_results": 5,
+  "min_score": 0.7
 }
 ```
 
 | Campo | Tipo | Requerido | Default | Descripción |
 |---|---|---|---|---|
 | `text` | `string` | ✅ | — | Texto de la consulta |
-| `n_results` | `int` | ❌ | `5` | Resultados a devolver |
+| `n_results` | `integer` | ❌ | `5` | Resultados a devolver |
+| `min_score` | `float` | ❌ | `0.0` | Score mínimo de similitud (0.0–1.0) para filtrar resultados |
 
 **Response `200`:**
 ```json

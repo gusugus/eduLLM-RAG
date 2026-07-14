@@ -200,7 +200,8 @@ Content-Type: application/json
 ```json
 {
   "text": "¿Cómo se clasifica un organismo según la taxonomía de Linneo?",
-  "n_results": 5
+  "n_results": 5,
+  "min_score": 0.7
 }
 ```
 
@@ -208,6 +209,7 @@ Content-Type: application/json
 |---|---|---|---|---|
 | `text` | `string` | ✅ | — | Texto de la consulta en lenguaje natural |
 | `n_results` | `integer` | ❌ | `5` | Cantidad de resultados a devolver |
+| `min_score` | `float` | ❌ | `0.0` | Score mínimo de similitud (0.0–1.0) para filtrar resultados |
 
 **Response `200 OK`:**
 ```json
@@ -505,6 +507,31 @@ curl -X POST http://localhost:8002/admin/load \
    ```
 
 3. Pasar `query_filter` a `qdrant_service.search()`.
+
+---
+
+## Agregar umbral de similitud (min_score)
+
+1. Extender `QueryRequest` en `core/models.py`:
+   ```python
+   class QueryRequest(BaseModel):
+       text: str
+       n_results: int = 5
+       min_score: float = 0.0
+   ```
+
+2. Configurar umbral en `config.yml`:
+   ```yaml
+   search:
+     min_score: 0.7
+   ```
+
+3. O sobrescribir con variable de entorno:
+   ```bash
+   export MIN_SCORE=0.7
+   ```
+
+4. El endpoint `/query` filtrará automáticamente los resultados con score ≥ min_score.
 
 ---
 

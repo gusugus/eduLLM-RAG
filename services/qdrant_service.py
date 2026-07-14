@@ -1,5 +1,5 @@
 from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, VectorParams, PointStruct
+from qdrant_client.models import Distance, VectorParams, PointStruct, Filter, FieldCondition, MatchValue, MinShould
 import logging
 from core.config import settings
 from typing import List, Dict, Any, Optional
@@ -50,5 +50,38 @@ class QdrantService:
         ).points
         return results
 
+    def scroll_with_filter(self, filter_obj: Filter, batch_size: int = 100):
+        all_records = []
+        next_offset = None
+        while True:
+            records, next_offset = self.client.scroll(
+                collection_name=self.collection_name,
+                limit=batch_size,
+                with_payload=True,
+                with_vectors=False,
+                offset=next_offset,
+                scroll_filter=filter_obj,
+            )
+            all_records.extend(records)
+            if next_offset is None:
+                break
+        return all_records
+
     def get_collection_info(self):
         return self.client.get_collection(self.collection_name)
+
+    def scroll_all(self, batch_size: int = 100):
+        all_records = []
+        next_offset = None
+        while True:
+            records, next_offset = self.client.scroll(
+                collection_name=self.collection_name,
+                limit=batch_size,
+                with_payload=True,
+                with_vectors=False,
+                offset=next_offset,
+            )
+            all_records.extend(records)
+            if next_offset is None:
+                break
+        return all_records

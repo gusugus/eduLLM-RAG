@@ -116,7 +116,8 @@ rag/
 │   ├── qdrant_service.py     # Operaciones CRUD contra Qdrant
 │   └── indexer_service.py    # Orquestación de carga de datos
 ├── scripts/
-│   └── load_to_qdrant.py   # CLI para carga masiva de datos
+│   ├── load_to_qdrant.py   # CLI para carga masiva de datos
+│   └── enriquecer_curriculum/   # Pipeline de enriquecimiento (NLP, BERTopic, matching curricular)
 ├── corpus/
 │   └── secciones_completas.json  # Datos educativos fuente
 └── .github/workflows/
@@ -129,7 +130,7 @@ rag/
 
 ## Última revisión
 
-- **Fecha:** 2026-05-24
-- **Commit:** `5cfbd82`
+- **Fecha:** 2026-06-12
+- **Commit:** `(pendiente)`
 
 [← Volver al índice](INDEX.md)

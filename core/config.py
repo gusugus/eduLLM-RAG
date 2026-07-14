@@ -16,6 +16,9 @@ class Settings:
         # Embedding
         self.embedding_model_name = os.getenv("EMBEDDING_MODEL", config.get('embedding', {}).get('model_name', 'BAAI/bge-small-en-v1.5'))
 
+        # Search
+        self.min_score = float(os.getenv("MIN_SCORE", config.get('search', {}).get('min_score', 0.0)))
+
         # Logging
         log_cfg = config.get('logging', {})
         self.log_level = log_cfg.get('level', 'INFO')

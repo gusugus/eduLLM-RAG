@@ -24,28 +24,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 10,
-      "topic_name": "evolutiva seres_biológicos_evolutivas_relaciones evolutivas",
+      "topic_id": 3,
+      "topic_name": "organismos vivos_biológicos_filogenéticas_biología",
       "topic_prob": 1.0,
       "topic_repr": [
-        "evolutiva seres",
+        "organismos vivos",
         "biológicos",
-        "evolutivas",
-        "relaciones evolutivas",
-        "evolutivo",
-        "evolutiva",
-        "evolutivos",
-        "evolutivas filogenéticas",
         "filogenéticas",
-        "grupos biológicos"
+        "biología",
+        "evolutivas filogenéticas",
+        "especies",
+        "dominio eucariota",
+        "taxonomía",
+        "relaciones evolutivas",
+        "especie"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La importancia de la taxonomía y la sistemática.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "La importancia de la taxonomía y la sistemática."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -75,28 +75,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 1,
-      "topic_name": "clasificación organismos_especies_taxonómica_organismos agrupan",
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
       "topic_prob": 1.0,
       "topic_repr": [
-        "clasificación organismos",
-        "especies",
         "taxonómica",
-        "organismos agrupan",
-        "organismos",
+        "taxonómicos",
         "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
         "organismo",
-        "taxones",
-        "diferentes grupos",
-        "desarrollo embrionario"
+        "especies",
+        "taxones"
       ]
     },
     "curriculum": {
-      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
+      "tema": "Tema 5: Vida en Transformación",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Conceptos de especie.",
+      "concepto": "Relación entre clasificación biológica y evolución.",
       "conceptos_seleccionados": [
-        "Conceptos de especie."
+        "Relación entre clasificación biológica y evolución."
       ],
       "criterios_seleccionados": []
     }
@@ -126,31 +126,23 @@
       ]
     },
     "bertopic": {
-      "topic_id": 1,
-      "topic_name": "clasificación organismos_especies_taxonómica_organismos agrupan",
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
       "topic_prob": 1.0,
       "topic_repr": [
-        "clasificación organismos",
-        "especies",
         "taxonómica",
-        "organismos agrupan",
-        "organismos",
+        "taxonómicos",
         "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
         "organismo",
-        "taxones",
-        "diferentes grupos",
-        "desarrollo embrionario"
+        "especies",
+        "taxones"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Componentes de los sistemas de clasificación taxonómica.",
-      "conceptos_seleccionados": [
-        "Componentes de los sistemas de clasificación taxonómica."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "2.1",
@@ -177,20 +169,20 @@
       ]
     },
     "bertopic": {
-      "topic_id": 1,
-      "topic_name": "clasificación organismos_especies_taxonómica_organismos agrupan",
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
       "topic_prob": 1.0,
       "topic_repr": [
-        "clasificación organismos",
-        "especies",
         "taxonómica",
-        "organismos agrupan",
-        "organismos",
+        "taxonómicos",
         "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
         "organismo",
-        "taxones",
-        "diferentes grupos",
-        "desarrollo embrionario"
+        "especies",
+        "taxones"
       ]
     },
     "curriculum": {
@@ -228,28 +220,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 11,
-      "topic_name": "evolutivo_filogenéticas_biológicos_organismos vivos",
-      "topic_prob": 1.0,
+      "topic_id": 3,
+      "topic_name": "organismos vivos_biológicos_filogenéticas_biología",
+      "topic_prob": 0.572559348734835,
       "topic_repr": [
-        "evolutivo",
-        "filogenéticas",
-        "biológicos",
         "organismos vivos",
+        "biológicos",
+        "filogenéticas",
         "biología",
-        "grupos biológicos",
+        "evolutivas filogenéticas",
         "especies",
-        "especie",
-        "taxones",
-        "animales plantas"
+        "dominio eucariota",
+        "taxonomía",
+        "relaciones evolutivas",
+        "especie"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La importancia de la taxonomía y la sistemática.",
+      "concepto": "Sistema de clasificación taxonómica.",
       "conceptos_seleccionados": [
-        "La importancia de la taxonomía y la sistemática."
+        "Sistema de clasificación taxonómica."
       ],
       "criterios_seleccionados": []
     }
@@ -279,28 +271,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 1,
-      "topic_name": "clasificación organismos_especies_taxonómica_organismos agrupan",
+      "topic_id": 2,
+      "topic_name": "organismos procariotas_heterótrofa_cromosoma bacteriano_invertebrados",
       "topic_prob": 0.0,
       "topic_repr": [
-        "clasificación organismos",
-        "especies",
-        "taxonómica",
-        "organismos agrupan",
-        "organismos",
-        "taxonómicas",
-        "organismo",
-        "taxones",
-        "diferentes grupos",
-        "desarrollo embrionario"
+        "organismos procariotas",
+        "heterótrofa",
+        "cromosoma bacteriano",
+        "invertebrados",
+        "tres grupos",
+        "mayoría unicelular",
+        "clasificación",
+        "cromosoma",
+        "autótrofos heterótrofos",
+        "depredadores"
       ]
     },
     "curriculum": {
-      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La importancia de la taxonomía y la sistemática.",
+      "concepto": "Tipos de células (procariota, eucariota, animal y vegetal).",
       "conceptos_seleccionados": [
-        "La importancia de la taxonomía y la sistemática."
+        "Tipos de células (procariota, eucariota, animal y vegetal)."
       ],
       "criterios_seleccionados": []
     }
@@ -330,28 +322,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 3,
-      "topic_name": "organismos procariotas_organismos unicelulares_organismos_dos células",
-      "topic_prob": 0.8399119388818284,
+      "topic_id": 2,
+      "topic_name": "organismos procariotas_heterótrofa_cromosoma bacteriano_invertebrados",
+      "topic_prob": 0.2048919303535566,
       "topic_repr": [
         "organismos procariotas",
-        "organismos unicelulares",
-        "organismos",
-        "dos células",
-        "unicelulares",
-        "ribosómico",
+        "heterótrofa",
         "cromosoma bacteriano",
-        "microorganismos",
-        "bacterias",
-        "invertebrados"
+        "invertebrados",
+        "tres grupos",
+        "mayoría unicelular",
+        "clasificación",
+        "cromosoma",
+        "autótrofos heterótrofos",
+        "depredadores"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La importancia de la taxonomía y la sistemática.",
+      "concepto": "Componentes de los sistemas de clasificación taxonómica.",
       "conceptos_seleccionados": [
-        "La importancia de la taxonomía y la sistemática."
+        "Componentes de los sistemas de clasificación taxonómica."
       ],
       "criterios_seleccionados": []
     }
@@ -359,7 +351,7 @@
   {
     "codigo": "3.1",
     "titulo": "3.1 El concepto biológico de especie",
-    "texto_completo": "Concepto biológico de especie: Según el genetista ruso Theodosius Dobzhansky (1900–1975) y el biólogo alemán Ernst Mayr (1904–2005), la especie se considera como un grupo de individuos que son semejantes y pueden reproducirse entre sí y originar descendencia fértil.\n\n\n\nAunque este concepto es el más utilizado y el de mayor aceptación, siempre ha sido tema de debate, pues los científicos no han logrado llegar a un consenso debido a que en la naturaleza se encuentran muchos casos en los que no se cumple a cabalidad con la condición.\n\n\n\nPor ejemplo, existen eventos en los que es posible la reproducción entre individuos de diferentes especies y se obtiene como resultado la aparición de híbridos. También existen individuos que a simple vista son tan diferentes que pareciera que no fueran de la misma especie; sin embargo, se considera que lo son porque pueden reproducirse entre sí. También está el caso de las bacterias que se reproducen de forma asexual, es decir, que no necesitan otro individuo para reproducirse. Por esto, la definición de especie como grupo de individuos capaz de reproducirse entre sí no es fácil de aplicar en todos los casos.\n\n\n\nDebido a lo anterior, el concepto biológico de especie ha cambiado en diferentes ocasiones y depende, en muchos casos, del punto de vista con el que se aborde. Se tienen otros conceptos desde los puntos de vista filogenético, tipológico, evolutivo y ecológico, entre otros. Sin embargo, el concepto biológico es el más utilizado.",
+    "texto_completo": "Según el genetista ruso Theodosius Dobzhansky (1900–1975) y el biólogo alemán Ernst Mayr (1904–2005), la especie se considera como un grupo de individuos que son semejantes y pueden reproducirse entre sí y originar descendencia fértil.\n\n\n\nAunque este concepto es el más utilizado y el de mayor aceptación, siempre ha sido tema de debate, pues los científicos no han logrado llegar a un consenso debido a que en la naturaleza se encuentran muchos casos en los que no se cumple a cabalidad con la condición.\n\n\n\nPor ejemplo, existen eventos en los que es posible la reproducción entre individuos de diferentes especies y se obtiene como resultado la aparición de híbridos. También existen individuos que a simple vista son tan diferentes que pareciera que no fueran de la misma especie; sin embargo, se considera que lo son porque pueden reproducirse entre sí. También está el caso de las bacterias que se reproducen de forma asexual, es decir, que no necesitan otro individuo para reproducirse. Por esto, la definición de especie como grupo de individuos capaz de reproducirse entre sí no es fácil de aplicar en todos los casos.\n\n\n\nDebido a lo anterior, el concepto biológico de especie ha cambiado en diferentes ocasiones y depende, en muchos casos, del punto de vista con el que se aborde. Se tienen otros conceptos desde los puntos de vista filogenético, tipológico, evolutivo y ecológico, entre otros. Sin embargo, el concepto biológico es el más utilizado.",
     "resumen": null,
     "metadatos": {
       "palabras_clave_nlp": [
@@ -382,27 +374,27 @@
     },
     "bertopic": {
       "topic_id": 7,
-      "topic_name": "común animales_organismos_organismo_organismos unicelulares",
-      "topic_prob": 0.5597618427119486,
+      "topic_name": "común animales_organismo_misma especie_especie",
+      "topic_prob": 0.6897117905169967,
       "topic_repr": [
         "común animales",
-        "organismos",
         "organismo",
-        "organismos unicelulares",
-        "tipo reproducción",
-        "especie",
         "misma especie",
+        "especie",
+        "bacterias reproducen",
         "genera",
-        "reproducción involucra",
-        "partenogénesis"
+        "células somáticas",
+        "tipo reproducción",
+        "similares progenitores",
+        "cada células"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Conceptos de especie.",
+      "concepto": "El concepto biológico de especie.",
       "conceptos_seleccionados": [
-        "Conceptos de especie."
+        "El concepto biológico de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -432,28 +424,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 6,
-      "topic_name": "incluyen organismos_organismos_organismos reproducción_genera",
-      "topic_prob": 0.5520370740321,
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
+      "topic_prob": 1.0,
       "topic_repr": [
-        "incluyen organismos",
-        "organismos",
-        "organismos reproducción",
-        "genera",
-        "grupo organismos",
-        "diferentes especies",
+        "taxonómica",
+        "taxonómicos",
+        "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
+        "organismo",
         "especies",
-        "filogenético",
-        "especie grupo",
-        "especie"
+        "taxones"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Conceptos de especie.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "Conceptos de especie."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -483,28 +475,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 6,
-      "topic_name": "incluyen organismos_organismos_organismos reproducción_genera",
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
       "topic_prob": 1.0,
       "topic_repr": [
-        "incluyen organismos",
-        "organismos",
-        "organismos reproducción",
-        "genera",
-        "grupo organismos",
-        "diferentes especies",
+        "taxonómica",
+        "taxonómicos",
+        "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
+        "organismo",
         "especies",
-        "filogenético",
-        "especie grupo",
-        "especie"
+        "taxones"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Conceptos de especie.",
+      "concepto": "El concepto tipológico de especie.",
       "conceptos_seleccionados": [
-        "Conceptos de especie."
+        "El concepto tipológico de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -530,28 +522,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 6,
-      "topic_name": "incluyen organismos_organismos_organismos reproducción_genera",
-      "topic_prob": 0.5936081520194113,
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
+      "topic_prob": 1.0,
       "topic_repr": [
-        "incluyen organismos",
-        "organismos",
-        "organismos reproducción",
-        "genera",
-        "grupo organismos",
-        "diferentes especies",
+        "taxonómica",
+        "taxonómicos",
+        "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
+        "organismo",
         "especies",
-        "filogenético",
-        "especie grupo",
-        "especie"
+        "taxones"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Filogenia y representación de relaciones evolutivas entre especies.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "Filogenia y representación de relaciones evolutivas entre especies."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -577,28 +569,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 6,
-      "topic_name": "incluyen organismos_organismos_organismos reproducción_genera",
-      "topic_prob": 1.0,
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
+      "topic_prob": 0.9844660029115003,
       "topic_repr": [
-        "incluyen organismos",
-        "organismos",
-        "organismos reproducción",
-        "genera",
-        "grupo organismos",
-        "diferentes especies",
+        "taxonómica",
+        "taxonómicos",
+        "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
+        "organismo",
         "especies",
-        "filogenético",
-        "especie grupo",
-        "especie"
+        "taxones"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Conceptos de especie.",
+      "concepto": "El concepto ecológico de especie.",
       "conceptos_seleccionados": [
-        "Conceptos de especie."
+        "El concepto ecológico de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -628,28 +620,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 10,
-      "topic_name": "evolutiva seres_biológicos_evolutivas_relaciones evolutivas",
+      "topic_id": 3,
+      "topic_name": "organismos vivos_biológicos_filogenéticas_biología",
       "topic_prob": 1.0,
       "topic_repr": [
-        "evolutiva seres",
+        "organismos vivos",
         "biológicos",
-        "evolutivas",
-        "relaciones evolutivas",
-        "evolutivo",
-        "evolutiva",
-        "evolutivos",
-        "evolutivas filogenéticas",
         "filogenéticas",
-        "grupos biológicos"
+        "biología",
+        "evolutivas filogenéticas",
+        "especies",
+        "dominio eucariota",
+        "taxonomía",
+        "relaciones evolutivas",
+        "especie"
       ]
     },
     "curriculum": {
-      "tema": "Tema 8: Vida en Transformación",
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Evidencias evolutivas.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "Evidencias evolutivas."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -679,28 +671,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 1,
-      "topic_name": "clasificación organismos_especies_taxonómica_organismos agrupan",
+      "topic_id": 11,
+      "topic_name": "evolutivas filogenéticas_filogenéticas_relaciones evolutivas_desarrollo embrionario",
       "topic_prob": 1.0,
       "topic_repr": [
-        "clasificación organismos",
-        "especies",
-        "taxonómica",
-        "organismos agrupan",
-        "organismos",
-        "taxonómicas",
-        "organismo",
-        "taxones",
-        "diferentes grupos",
-        "desarrollo embrionario"
+        "evolutivas filogenéticas",
+        "filogenéticas",
+        "relaciones evolutivas",
+        "desarrollo embrionario",
+        "embrionario",
+        "mayoría animales",
+        "poríferos esponjas",
+        "teoría",
+        "esponjas",
+        "seres vivos"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Filogenia y representación de relaciones evolutivas entre especies.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "Filogenia y representación de relaciones evolutivas entre especies."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -730,28 +722,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 1,
-      "topic_name": "clasificación organismos_especies_taxonómica_organismos agrupan",
+      "topic_id": 0,
+      "topic_name": "taxonómica_taxonómicos_taxonómicas_dos organismos",
       "topic_prob": 1.0,
       "topic_repr": [
-        "clasificación organismos",
-        "especies",
         "taxonómica",
-        "organismos agrupan",
-        "organismos",
+        "taxonómicos",
         "taxonómicas",
+        "dos organismos",
+        "especies diferentes",
+        "especies grupos",
+        "dos especies",
         "organismo",
-        "taxones",
-        "diferentes grupos",
-        "desarrollo embrionario"
+        "especies",
+        "taxones"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La importancia de la taxonomía y la sistemática.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "La importancia de la taxonomía y la sistemática."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -781,28 +773,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 11,
-      "topic_name": "evolutivo_filogenéticas_biológicos_organismos vivos",
-      "topic_prob": 0.0,
+      "topic_id": 3,
+      "topic_name": "organismos vivos_biológicos_filogenéticas_biología",
+      "topic_prob": 0.5469072127298704,
       "topic_repr": [
-        "evolutivo",
-        "filogenéticas",
-        "biológicos",
         "organismos vivos",
+        "biológicos",
+        "filogenéticas",
         "biología",
-        "grupos biológicos",
+        "evolutivas filogenéticas",
         "especies",
-        "especie",
-        "taxones",
-        "animales plantas"
+        "dominio eucariota",
+        "taxonomía",
+        "relaciones evolutivas",
+        "especie"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Filogenia y representación de relaciones evolutivas entre especies.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "Filogenia y representación de relaciones evolutivas entre especies."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -810,15 +802,15 @@
   {
     "codigo": "4.3.1",
     "titulo": "4.3.1 Construcción de cladogramas Conceptos y criterios",
-    "texto_completo": "Los cladogramas son diagramas ramificados que constituyen la forma más común de representar las relaciones de parentesco entre diferentes grupos. Existen formas diferentes de dibujar estos diagramas, pero no existe ninguna diferencia si las ramas se disponen de manera vertical, hacia arriba, hacia abajo u horizontales. Los cladogramas se construyen así: se eligen inicialmente los grupos que se quieren clasificar, por ejemplo, siete animales que representan a las principales clases de vertebrados; se escogen dos criterios que permiten definir los rasgos que van a servir para comparar los grupos, para los cuales es necesario tener en cuenta:\n\n\n\nCriterio de simplicidad: es indispensable seleccionar rasgos que sean fáciles de identificar.\n\nCriterio evolutivo: los rasgos elegidos deberán ser homologías; así, el diagrama representará, además, relaciones de parentesco evolutivo entre los grupos.\n\n\n\nEn la tabla se muestran los datos obtenidos. El signo (+) indica que el rasgo está presente y el signo (-) que está ausente.\n\n\n\nRasgo / Grupo: Tiburón | Sardina | Rana | Cocodrilo | Paloma | Murciélago | Chimpancé\n\nVertebrado: + | + | + | + | + | + | +\n\nEsqueleto óseo: | + | + | + | + | + | +\n\nTetrápodo: | | + | + | + | + | +\n\nCorazón con cuatro cavidades: | | | + | + | + | +\n\nPlumas: | | | | + | | -",
+    "texto_completo": "Los cladogramas son diagramas ramificados que constituyen la forma más común de representar las relaciones de parentesco entre diferentes grupos. Existen formas diferentes de dibujar estos diagramas, pero no existe ninguna diferencia si las ramas se disponen de manera vertical, hacia arriba, hacia abajo u horizontales. Los cladogramas se construyen así: se eligen inicialmente los grupos que se quieren clasificar, por ejemplo, siete animales que representan a las principales clases de vertebrados; se escogen dos criterios que permiten definir los rasgos que van a servir para comparar los grupos, para los cuales es necesario tener en cuenta:\n\n\n\nCriterio de simplicidad: es indispensable seleccionar rasgos que sean fáciles de identificar.\n\nCriterio evolutivo: los rasgos elegidos deberán ser homologías; así, el diagrama representará, además, relaciones de parentesco evolutivo entre los grupos.\n\n\n\nEn la tabla se muestran los datos obtenidos. El signo (+) indica que el rasgo está presente y el signo (-) que está ausente.\n\n\n\nRasgo / Grupo: Tiburón | Sardina | Rana | Cocodrilo | Paloma | Murciélago | Chimpancé\n\nVertebrado: + | + | + | + | + | + | +\n\nEsqueleto óseo: | + | + | + | + | + | +\n\nTetrápodo: | | + | + | + | + | +\n\nCorazón con cuatro cavidades: | | | + | + | + | +\n\nPlumas: | | | | + | | -\n\n\n\nTip: Actualmente, los cladogramas se construyen con programas informáticos que son capaces de manejar muchos caracteres.",
     "resumen": null,
     "metadatos": {
       "palabras_clave_nlp": [
         "grupo",
         "rasgo",
+        "cladograma",
         "diagrama",
         "criterio",
-        "cladograma",
         "forma",
         "relación",
         "parentesco",
@@ -832,36 +824,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 2,
-      "topic_name": "evolutivo_cladogramas_parentesco_invertebrados",
-      "topic_prob": 0.5587355231232053,
+      "topic_id": 4,
+      "topic_name": "invertebrados_gusanos_insectos_poríferos",
+      "topic_prob": 0.23556474836193875,
       "topic_repr": [
-        "evolutivo",
-        "cladogramas",
-        "parentesco",
         "invertebrados",
-        "relaciones parentesco",
         "gusanos",
-        "características",
-        "grupos",
-        "pertenecen grupo",
-        "reptiles"
+        "insectos",
+        "poríferos",
+        "reptiles",
+        "esponjas",
+        "esponja",
+        "evolutivo",
+        "moluscos",
+        "glándulas"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Construcción e interpretación de cladogramas.",
-      "conceptos_seleccionados": [
-        "Construcción e interpretación de cladogramas."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "4.3.2",
-    "titulo": "4.3.2 Construcción de cladogramas",
-    "texto_completo": "Construcción de cladogramas: Se construye el diagrama (cladograma) partiendo de un rasgo común, en este caso, todos los animales tienen columna vertebral, por lo que se toma este carácter como punto de partida. A partir del origen común, las líneas o ramas del diagrama se bifurcan; en cada bifurcación se indica el rasgo que permite hacer la división.\n\n\n\nTener esqueleto óseo permite hacer la primera división en dos grupos y separar al tiburón, con esqueleto de cartílago.\n\nSer tetrápodo es un rasgo que comparten todos los que tienen esqueleto óseo menos la sardina, por lo que se abre una nueva rama en el diagrama.\n\nTener un corazón dividido en cuatro cámaras es una característica de todos los animales con cuatro patas, menos de la rana. En este punto se bifurca la rama correspondiente a la rana.\n\nPoseer plumas es una característica que solo está presente en la paloma.\n\nPoseer pelo y glándulas mamarias es una característica compartida por el murciélago y el chimpancé, así que se puede suponer que proceden de un ancestro común que se separó del resto de los vertebrados.",
+    "titulo": "4.3.2 Construcción de cladogramas Proceso paso a paso",
+    "texto_completo": "Se construye el diagrama partiendo de un rasgo común, en este caso, todos los animales tienen columna vertebral, por lo que se toma este carácter como punto de partida. A partir del origen común, las líneas o ramas del diagrama se bifurcan; en cada bifurcación se indica el rasgo que permite hacer la división.\n\n\n\nTener esqueleto óseo permite hacer la primera división en dos grupos y separar al tiburón, con esqueleto de cartílago.\n\nSer tetrápodo es un rasgo que comparten todos los que tienen esqueleto óseo menos la sardina, por lo que se abre una nueva rama en el diagrama.\n\nTener un corazón dividido en cuatro cámaras es una característica de todos los animales con cuatro patas, menos de la rana. En este punto se bifurca la rama correspondiente a la rana.\n\nPoseer plumas es una característica que solo está presente en la paloma.\n\nPoseer pelo y glándulas mamarias es una característica compartida por el murciélago y el chimpancé, así que se puede suponer que proceden de un ancestro común que se separó del resto de los vertebrados.",
     "resumen": null,
     "metadatos": {
       "palabras_clave_nlp": [
@@ -870,44 +854,36 @@
         "rama",
         "esqueleto",
         "característica",
-        "cladograma",
         "animal",
         "punto",
         "división",
         "óseo",
         "rana",
-        "construcción",
         "caso",
         "columna",
-        "vertebral"
+        "vertebral",
+        "carácter",
+        "partida"
       ]
     },
     "bertopic": {
-      "topic_id": 2,
-      "topic_name": "evolutivo_cladogramas_parentesco_invertebrados",
-      "topic_prob": 1.0,
+      "topic_id": 4,
+      "topic_name": "invertebrados_gusanos_insectos_poríferos",
+      "topic_prob": 0.46679509138149267,
       "topic_repr": [
-        "evolutivo",
-        "cladogramas",
-        "parentesco",
         "invertebrados",
-        "relaciones parentesco",
         "gusanos",
-        "características",
-        "grupos",
-        "pertenecen grupo",
-        "reptiles"
+        "insectos",
+        "poríferos",
+        "reptiles",
+        "esponjas",
+        "esponja",
+        "evolutivo",
+        "moluscos",
+        "glándulas"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Construcción e interpretación de cladogramas.",
-      "conceptos_seleccionados": [
-        "Construcción e interpretación de cladogramas."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "4.4",
@@ -934,28 +910,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 11,
-      "topic_name": "evolutivo_filogenéticas_biológicos_organismos vivos",
-      "topic_prob": 1.0,
+      "topic_id": 3,
+      "topic_name": "organismos vivos_biológicos_filogenéticas_biología",
+      "topic_prob": 0.5728522669462117,
       "topic_repr": [
-        "evolutivo",
-        "filogenéticas",
-        "biológicos",
         "organismos vivos",
+        "biológicos",
+        "filogenéticas",
         "biología",
-        "grupos biológicos",
+        "evolutivas filogenéticas",
         "especies",
-        "especie",
-        "taxones",
-        "animales plantas"
+        "dominio eucariota",
+        "taxonomía",
+        "relaciones evolutivas",
+        "especie"
       ]
     },
     "curriculum": {
       "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La importancia de la taxonomía y la sistemática.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "La importancia de la taxonomía y la sistemática."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -985,28 +961,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 4,
-      "topic_name": "organismos_eucariotas_unicelulares_eucariota",
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
+        "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
         "eucariotas",
-        "unicelulares",
         "eucariota",
+        "unicelulares",
+        "cromosomas",
         "multicelulares",
-        "unicelular",
-        "multicelular",
-        "procariotas",
-        "dos células",
-        "cromátidas"
+        "pluricelulares"
       ]
     },
     "curriculum": {
       "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Tipos de células (procariota, eucariota, animal y vegetal).",
+      "concepto": "Estructura y función de organelos celulares.",
       "conceptos_seleccionados": [
-        "Tipos de células (procariota, eucariota, animal y vegetal)."
+        "Estructura y función de organelos celulares."
       ],
       "criterios_seleccionados": []
     }
@@ -1036,31 +1012,23 @@
       ]
     },
     "bertopic": {
-      "topic_id": 3,
-      "topic_name": "organismos procariotas_organismos unicelulares_organismos_dos células",
-      "topic_prob": 0.8899514932823899,
+      "topic_id": 2,
+      "topic_name": "organismos procariotas_heterótrofa_cromosoma bacteriano_invertebrados",
+      "topic_prob": 1.0,
       "topic_repr": [
         "organismos procariotas",
-        "organismos unicelulares",
-        "organismos",
-        "dos células",
-        "unicelulares",
-        "ribosómico",
+        "heterótrofa",
         "cromosoma bacteriano",
-        "microorganismos",
-        "bacterias",
-        "invertebrados"
+        "invertebrados",
+        "tres grupos",
+        "mayoría unicelular",
+        "clasificación",
+        "cromosoma",
+        "autótrofos heterótrofos",
+        "depredadores"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 3: La Clasificación de los Procariotas",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Criterios de clasificación de procariotas.",
-      "conceptos_seleccionados": [
-        "Criterios de clasificación de procariotas."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "5.3",
@@ -1087,31 +1055,23 @@
       ]
     },
     "bertopic": {
-      "topic_id": 13,
-      "topic_name": "organismos_heterótrofos_hace bacterias_bacterias pueden",
-      "topic_prob": 1.0,
+      "topic_id": 10,
+      "topic_name": "reproducción_reproducción sexual_variación genética_genética",
+      "topic_prob": 0.0,
       "topic_repr": [
-        "organismos",
-        "heterótrofos",
-        "hace bacterias",
-        "bacterias pueden",
-        "bacterias",
-        "orgánica",
-        "ser planta",
-        "ecosistemas",
-        "micorrizas asociaciones",
-        "complejos"
+        "reproducción",
+        "reproducción sexual",
+        "variación genética",
+        "genética",
+        "genético",
+        "aparatos reproductores",
+        "recombinación",
+        "organismo",
+        "material genético",
+        "reproductores"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 3: La Clasificación de los Procariotas",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La clasificación de las bacterias.",
-      "conceptos_seleccionados": [
-        "La clasificación de las bacterias."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "6.1",
@@ -1138,28 +1098,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 3,
-      "topic_name": "organismos procariotas_organismos unicelulares_organismos_dos células",
-      "topic_prob": 1.0,
+      "topic_id": 2,
+      "topic_name": "organismos procariotas_heterótrofa_cromosoma bacteriano_invertebrados",
+      "topic_prob": 0.28319130808087734,
       "topic_repr": [
         "organismos procariotas",
-        "organismos unicelulares",
-        "organismos",
-        "dos células",
-        "unicelulares",
-        "ribosómico",
+        "heterótrofa",
         "cromosoma bacteriano",
-        "microorganismos",
-        "bacterias",
-        "invertebrados"
+        "invertebrados",
+        "tres grupos",
+        "mayoría unicelular",
+        "clasificación",
+        "cromosoma",
+        "autótrofos heterótrofos",
+        "depredadores"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción en procariotas.",
+      "concepto": "Tipos de células (procariota, eucariota, animal y vegetal).",
       "conceptos_seleccionados": [
-        "Reproducción en procariotas."
+        "Tipos de células (procariota, eucariota, animal y vegetal)."
       ],
       "criterios_seleccionados": []
     }
@@ -1189,46 +1149,38 @@
       ]
     },
     "bertopic": {
-      "topic_id": 3,
-      "topic_name": "organismos procariotas_organismos unicelulares_organismos_dos células",
-      "topic_prob": 0.3650124134477544,
+      "topic_id": 2,
+      "topic_name": "organismos procariotas_heterótrofa_cromosoma bacteriano_invertebrados",
+      "topic_prob": 0.1690662483921504,
       "topic_repr": [
         "organismos procariotas",
-        "organismos unicelulares",
-        "organismos",
-        "dos células",
-        "unicelulares",
-        "ribosómico",
+        "heterótrofa",
         "cromosoma bacteriano",
-        "microorganismos",
-        "bacterias",
-        "invertebrados"
+        "invertebrados",
+        "tres grupos",
+        "mayoría unicelular",
+        "clasificación",
+        "cromosoma",
+        "autótrofos heterótrofos",
+        "depredadores"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Los protozoos.",
-      "conceptos_seleccionados": [
-        "Los protozoos."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "6.3",
     "titulo": "6.3 Las algas",
-    "texto_completo": "Las algas incluyen especies unicelulares como las diatomeas y multicelulares como la laminaria, alga parda que puede alcanzar varios metros de longitud. Algunas presentan pigmentos como clorofilas, ficoeritrinas, ficocianinas y fucoxantinas. La presencia de estos pigmentos y algunas características de la pared celular han permitido agruparlas.",
+    "texto_completo": "Incluyen especies unicelulares como las diatomeas y multicelulares como la laminaria, alga parda que puede alcanzar varios metros de longitud. Algunas presentan pigmentos como clorofilas, ficoeritrinas, ficocianinas y fucoxantinas. La presencia de estos pigmentos y algunas características de la pared celular han permitido agruparlas.",
     "resumen": null,
     "metadatos": {
       "palabras_clave_nlp": [
-        "alga",
         "pigmento",
         "especie",
         "unicelular",
         "diatomea",
         "multicelular",
         "laminaria",
+        "alga",
         "pardo",
         "metro",
         "longitud",
@@ -1240,43 +1192,34 @@
       ]
     },
     "bertopic": {
-      "topic_id": 14,
-      "topic_name": "especies_unicelulares_heterótrofos_pluricelulares",
-      "topic_prob": 1.0,
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
+      "topic_prob": 0.6280495397597777,
       "topic_repr": [
         "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
+        "eucariotas",
+        "eucariota",
         "unicelulares",
-        "heterótrofos",
-        "pluricelulares",
+        "cromosomas",
         "multicelulares",
-        "celulosa",
-        "fotosíntesis",
-        "autótrofos heterótrofos",
-        "presencia pigmentos",
-        "características"
+        "pluricelulares"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Las algas y su clasificación.",
-      "conceptos_seleccionados": [
-        "Las algas y su clasificación."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "6.3.1",
     "titulo": "6.3.1 Clasificación de las algas",
-    "texto_completo": "La clasificacion de las algas las damos a conocer a continuación:\n\n\n\n* Dinoflagelados: Unicelulares, traslúcidos, con dos flagelos; gracias a ellos se desplazan girando. Algunos no tienen pared celular y otros poseen placas gruesas de celulosa.\n\n\n\n* Euglenoides: Unicelulares, presentan flagelo y cloroplastos. La mayoría habita en aguas dulces poco profundas. Carecen de pared celular y los hay autótrofos y heterótrofos.\n\n\n\n* Diatomeas: Presentan una pared celular delgada de sales de sílice. Realizan fotosíntesis mediante clorofila. Almacenan nutrientes en forma de aceites en lugar de carbohidratos.\n\n\n\n* Clorófitas: Poseen clorofila como pigmento fotosintético principal. Habitan en aguas dulces y también hay especies marinas. Hay especies unicelulares y otras coloniales.\n\n\n\n* Rodófitas: Algas rojas que contienen ficobilina, pigmento que les da el color rojo característico. Habitan en zonas profundas y son en su mayoría pluricelulares.\n\n\n\n* Feófitas: Algas pardas que contienen clorofila y fucoxantina. Incluyen las algas pluricelulares más grandes que habitan en las costas rocosas de áreas frías.",
+    "texto_completo": "Dinoflagelados: Unicelulares, traslúcidos, con dos flagelos; gracias a ellos se desplazan girando. Algunos no tienen pared celular y otros poseen placas gruesas de celulosa.\n\n\n\nEuglenoides: Unicelulares, presentan flagelo y cloroplastos. La mayoría habita en aguas dulces poco profundas. Carecen de pared celular y los hay autótrofos y heterótrofos.\n\n\n\nDiatomeas: Presentan una pared celular delgada de sales de sílice. Realizan fotosíntesis mediante clorofila. Almacenan nutrientes en forma de aceites en lugar de carbohidratos.\n\n\n\nClorófitas: Poseen clorofila como pigmento fotosintético principal. Habitan en aguas dulces y también hay especies marinas. Hay especies unicelulares y otras coloniales.\n\n\n\nRodófitas: Algas rojas que contienen ficobilina, pigmento que les da el color rojo característico. Habitan en zonas profundas y son en su mayoría pluricelulares.\n\n\n\nFeófitas: Algas pardas que contienen clorofila y fucoxantina. Incluyen las algas pluricelulares más grandes que habitan en las costas rocosas de áreas frías.",
     "resumen": null,
     "metadatos": {
       "palabras_clave_nlp": [
         "pared",
         "celular",
         "clorofila",
-        "alga",
         "unicelulares",
         "flagelo",
         "mayoría",
@@ -1287,40 +1230,33 @@
         "especie",
         "algas",
         "rojo",
-        "pluricelular"
+        "pluricelular",
+        "dinoflagelado"
       ]
     },
     "bertopic": {
-      "topic_id": 14,
-      "topic_name": "especies_unicelulares_heterótrofos_pluricelulares",
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
       "topic_prob": 1.0,
       "topic_repr": [
         "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
+        "eucariotas",
+        "eucariota",
         "unicelulares",
-        "heterótrofos",
-        "pluricelulares",
+        "cromosomas",
         "multicelulares",
-        "celulosa",
-        "fotosíntesis",
-        "autótrofos heterótrofos",
-        "presencia pigmentos",
-        "características"
+        "pluricelulares"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Las algas y su clasificación.",
-      "conceptos_seleccionados": [
-        "Las algas y su clasificación."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "6.4",
     "titulo": "6.4 Los mohos acuáticos o mucilaginosos",
-    "texto_completo": "Los mohos acuático sdon protistas que a simple vista son similares a los hongos; sin embargo, no lo son gracias a sus características bioquímicas de su pared celular, que no tiene quitina. Se distinguen tres grupos de mohos dentro de los protistas.\n\n\n\nMixomicetos o mohos mucilaginosos acelulares: son mohos mucilaginosos o deslizantes; se caracterizan por la ausencia de pared celular y por formar plasmodios, que son células multinucleadas formadas por la fusión de varias células. Presentan una textura gelatinosa que ayuda a que el moho se deslice por la superficie donde se encuentra.\n\n\n\nAcrasiomicetos o mohos mucilaginosos celulares: son mohos que se arrastran en suelos ricos y húmedos y pasan la mayor parte de su ciclo vital como células ameboides individuales sin flagelos. Producen una sustancia llamada acrasina.\n\n\n\nOomicetos: a este grupo pertenecen los mohos acuáticos. Son protistas filamentosos; pueden ser parásitos o saprobiontes, es decir, que se alimentan de materia orgánica en descomposición. Difieren de los hongos ya que presentan células reproductoras flageladas.",
+    "texto_completo": "Son protistas que a simple vista son similares a los hongos; sin embargo, no lo son gracias a sus características bioquímicas de su pared celular, que no tiene quitina. Se distinguen tres grupos de mohos dentro de los protistas.\n\n\n\nMixomicetos o mohos mucilaginosos acelulares: son mohos mucilaginosos o deslizantes; se caracterizan por la ausencia de pared celular y por formar plasmodios, que son células multinucleadas formadas por la fusión de varias células. Presentan una textura gelatinosa que ayuda a que el moho se deslice por la superficie donde se encuentra.\n\n\n\nAcrasiomicetos o mohos mucilaginosos celulares: son mohos que se arrastran en suelos ricos y húmedos y pasan la mayor parte de su ciclo vital como células ameboides individuales sin flagelos. Producen una sustancia llamada acrasina.\n\n\n\nOomicetos: a este grupo pertenecen los mohos acuáticos. Son protistas filamentosos; pueden ser parásitos o saprobiontes, es decir, que se alimentan de materia orgánica en descomposición. Difieren de los hongos ya que presentan células reproductoras flageladas.",
     "resumen": null,
     "metadatos": {
       "palabras_clave_nlp": [
@@ -1329,44 +1265,36 @@
         "protista",
         "celular",
         "mucilaginoso",
-        "acuático",
         "hongo",
         "pared",
         "grupo",
-        "sdon",
         "simple",
         "vista",
         "similar",
         "gracias",
-        "característica"
+        "característica",
+        "bioquímica",
+        "quitina"
       ]
     },
     "bertopic": {
-      "topic_id": 12,
-      "topic_name": "ser parásitos_parásitos_presentan células_tipo células",
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
       "topic_prob": 1.0,
       "topic_repr": [
-        "ser parásitos",
-        "parásitos",
-        "presentan células",
-        "tipo células",
-        "bioquímicas",
-        "microfilos",
-        "hongos presentan",
-        "mucilaginosos",
-        "células",
-        "reproducen"
+        "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
+        "eucariotas",
+        "eucariota",
+        "unicelulares",
+        "cromosomas",
+        "multicelulares",
+        "pluricelulares"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Los mohos acuáticos o mucilaginosos.",
-      "conceptos_seleccionados": [
-        "Los mohos acuáticos o mucilaginosos."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "7.1",
@@ -1393,31 +1321,23 @@
       ]
     },
     "bertopic": {
-      "topic_id": 4,
-      "topic_name": "organismos_eucariotas_unicelulares_eucariota",
-      "topic_prob": 0.4715583450518037,
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
+      "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
+        "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
         "eucariotas",
-        "unicelulares",
         "eucariota",
+        "unicelulares",
+        "cromosomas",
         "multicelulares",
-        "unicelular",
-        "multicelular",
-        "procariotas",
-        "dos células",
-        "cromátidas"
+        "pluricelulares"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 8: Vida en Transformación",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Procesos que generan diversidad biológica.",
-      "conceptos_seleccionados": [
-        "Procesos que generan diversidad biológica."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "7.2",
@@ -1444,24 +1364,24 @@
       ]
     },
     "bertopic": {
-      "topic_id": 13,
-      "topic_name": "organismos_heterótrofos_hace bacterias_bacterias pueden",
-      "topic_prob": 1.0,
+      "topic_id": 12,
+      "topic_name": "forma reproducción_reproducción sexual_sexual producen_biología",
+      "topic_prob": 0.0,
       "topic_repr": [
-        "organismos",
-        "heterótrofos",
-        "hace bacterias",
-        "bacterias pueden",
-        "bacterias",
-        "orgánica",
-        "ser planta",
-        "ecosistemas",
-        "micorrizas asociaciones",
-        "complejos"
+        "forma reproducción",
+        "reproducción sexual",
+        "sexual producen",
+        "biología",
+        "organismos eucariotas",
+        "plantas organismos",
+        "multicelulares",
+        "reproducción",
+        "cada células",
+        "mayoría unicelular"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 3: Cadena Alimenticia y Actividad Humana en los Ecosistemas",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
       "concepto": "Clasificación de los hongos según su nutrición.",
       "conceptos_seleccionados": [
@@ -1495,24 +1415,24 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
+      "topic_id": 12,
+      "topic_name": "forma reproducción_reproducción sexual_sexual producen_biología",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
-        "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
-        "plantas",
-        "dan origen",
-        "pluricelulares",
-        "multicelular",
-        "origen"
+        "forma reproducción",
+        "reproducción sexual",
+        "sexual producen",
+        "biología",
+        "organismos eucariotas",
+        "plantas organismos",
+        "multicelulares",
+        "reproducción",
+        "cada células",
+        "mayoría unicelular"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 3: Cadena Alimenticia y Actividad Humana en los Ecosistemas",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
       "concepto": "Los hongos según su morfología.",
       "conceptos_seleccionados": [
@@ -1546,28 +1466,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
+      "topic_id": 12,
+      "topic_name": "forma reproducción_reproducción sexual_sexual producen_biología",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
-        "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
-        "plantas",
-        "dan origen",
-        "pluricelulares",
-        "multicelular",
-        "origen"
+        "forma reproducción",
+        "reproducción sexual",
+        "sexual producen",
+        "biología",
+        "organismos eucariotas",
+        "plantas organismos",
+        "multicelulares",
+        "reproducción",
+        "cada células",
+        "mayoría unicelular"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 3: Cadena Alimenticia y Actividad Humana en los Ecosistemas",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Las plantas.",
+      "concepto": "Criterios de clasificación de las plantas.",
       "conceptos_seleccionados": [
-        "Las plantas."
+        "Criterios de clasificación de las plantas."
       ],
       "criterios_seleccionados": []
     }
@@ -1597,28 +1517,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
-      "topic_prob": 1.0,
+      "topic_id": 8,
+      "topic_name": "forma reproducción_especies_embrión permite_embrión",
+      "topic_prob": 0.4678019998346012,
       "topic_repr": [
-        "organismos",
+        "forma reproducción",
         "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
-        "plantas",
-        "dan origen",
-        "pluricelulares",
-        "multicelular",
-        "origen"
+        "embrión permite",
+        "embrión",
+        "fecundación",
+        "semilla desnuda",
+        "protege embrión",
+        "caracterizan tener",
+        "tejidos",
+        "pétalos estambres"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 3: Cadena Alimenticia y Actividad Humana en los Ecosistemas",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Criterios de clasificación de las plantas.",
+      "concepto": "Las plantas con semilla.",
       "conceptos_seleccionados": [
-        "Criterios de clasificación de las plantas."
+        "Las plantas con semilla."
       ],
       "criterios_seleccionados": []
     }
@@ -1648,28 +1568,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
+      "topic_id": 8,
+      "topic_name": "forma reproducción_especies_embrión permite_embrión",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
+        "forma reproducción",
         "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
-        "plantas",
-        "dan origen",
-        "pluricelulares",
-        "multicelular",
-        "origen"
+        "embrión permite",
+        "embrión",
+        "fecundación",
+        "semilla desnuda",
+        "protege embrión",
+        "caracterizan tener",
+        "tejidos",
+        "pétalos estambres"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 3: Cadena Alimenticia y Actividad Humana en los Ecosistemas",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Los hongos según su morfología.",
+      "concepto": "Las plantas vasculares sin semilla.",
       "conceptos_seleccionados": [
-        "Los hongos según su morfología."
+        "Las plantas vasculares sin semilla."
       ],
       "criterios_seleccionados": []
     }
@@ -1699,28 +1619,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 12,
-      "topic_name": "ser parásitos_parásitos_presentan células_tipo células",
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
       "topic_prob": 1.0,
       "topic_repr": [
-        "ser parásitos",
-        "parásitos",
-        "presentan células",
-        "tipo células",
-        "bioquímicas",
-        "microfilos",
-        "hongos presentan",
-        "mucilaginosos",
-        "células",
-        "reproducen"
+        "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
+        "eucariotas",
+        "eucariota",
+        "unicelulares",
+        "cromosomas",
+        "multicelulares",
+        "pluricelulares"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 3: Cadena Alimenticia y Actividad Humana en los Ecosistemas",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de plantas.",
+      "concepto": "Las plantas vasculares sin semilla.",
       "conceptos_seleccionados": [
-        "Reproducción de plantas."
+        "Las plantas vasculares sin semilla."
       ],
       "criterios_seleccionados": []
     }
@@ -1750,28 +1670,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
+      "topic_id": 8,
+      "topic_name": "forma reproducción_especies_embrión permite_embrión",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
+        "forma reproducción",
         "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
-        "plantas",
-        "dan origen",
-        "pluricelulares",
-        "multicelular",
-        "origen"
+        "embrión permite",
+        "embrión",
+        "fecundación",
+        "semilla desnuda",
+        "protege embrión",
+        "caracterizan tener",
+        "tejidos",
+        "pétalos estambres"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 3: Cadena Alimenticia y Actividad Humana en los Ecosistemas",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de plantas.",
+      "concepto": "Las plantas con semilla.",
       "conceptos_seleccionados": [
-        "Reproducción de plantas."
+        "Las plantas con semilla."
       ],
       "criterios_seleccionados": []
     }
@@ -1801,28 +1721,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 4,
-      "topic_name": "organismos_eucariotas_unicelulares_eucariota",
-      "topic_prob": 1.0,
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
+      "topic_prob": 0.848015362072604,
       "topic_repr": [
-        "organismos",
+        "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
         "eucariotas",
-        "unicelulares",
         "eucariota",
+        "unicelulares",
+        "cromosomas",
         "multicelulares",
-        "unicelular",
-        "multicelular",
-        "procariotas",
-        "dos células",
-        "cromátidas"
+        "pluricelulares"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Animales invertebrados.",
+      "concepto": "Estructura y función de organelos celulares.",
       "conceptos_seleccionados": [
-        "Animales invertebrados."
+        "Estructura y función de organelos celulares."
       ],
       "criterios_seleccionados": []
     }
@@ -1852,31 +1772,23 @@
       ]
     },
     "bertopic": {
-      "topic_id": 1,
-      "topic_name": "clasificación organismos_especies_taxonómica_organismos agrupan",
+      "topic_id": 11,
+      "topic_name": "evolutivas filogenéticas_filogenéticas_relaciones evolutivas_desarrollo embrionario",
       "topic_prob": 1.0,
       "topic_repr": [
-        "clasificación organismos",
-        "especies",
-        "taxonómica",
-        "organismos agrupan",
-        "organismos",
-        "taxonómicas",
-        "organismo",
-        "taxones",
-        "diferentes grupos",
-        "desarrollo embrionario"
+        "evolutivas filogenéticas",
+        "filogenéticas",
+        "relaciones evolutivas",
+        "desarrollo embrionario",
+        "embrionario",
+        "mayoría animales",
+        "poríferos esponjas",
+        "teoría",
+        "esponjas",
+        "seres vivos"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Criterios de clasificación de los animales.",
-      "conceptos_seleccionados": [
-        "Criterios de clasificación de los animales."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "9.3",
@@ -1903,24 +1815,24 @@
       ]
     },
     "bertopic": {
-      "topic_id": 2,
-      "topic_name": "evolutivo_cladogramas_parentesco_invertebrados",
-      "topic_prob": 1.0,
+      "topic_id": 4,
+      "topic_name": "invertebrados_gusanos_insectos_poríferos",
+      "topic_prob": 0.5700491896906584,
       "topic_repr": [
-        "evolutivo",
-        "cladogramas",
-        "parentesco",
         "invertebrados",
-        "relaciones parentesco",
         "gusanos",
-        "características",
-        "grupos",
-        "pertenecen grupo",
-        "reptiles"
+        "insectos",
+        "poríferos",
+        "reptiles",
+        "esponjas",
+        "esponja",
+        "evolutivo",
+        "moluscos",
+        "glándulas"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 4: Preservando la Biodiversidad",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
       "concepto": "Animales invertebrados.",
       "conceptos_seleccionados": [
@@ -1954,24 +1866,24 @@
       ]
     },
     "bertopic": {
-      "topic_id": 2,
-      "topic_name": "evolutivo_cladogramas_parentesco_invertebrados",
+      "topic_id": 4,
+      "topic_name": "invertebrados_gusanos_insectos_poríferos",
       "topic_prob": 1.0,
       "topic_repr": [
-        "evolutivo",
-        "cladogramas",
-        "parentesco",
         "invertebrados",
-        "relaciones parentesco",
         "gusanos",
-        "características",
-        "grupos",
-        "pertenecen grupo",
-        "reptiles"
+        "insectos",
+        "poríferos",
+        "reptiles",
+        "esponjas",
+        "esponja",
+        "evolutivo",
+        "moluscos",
+        "glándulas"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 4: Preservando la Biodiversidad",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
       "concepto": "Filo cordados: animales cordados.",
       "conceptos_seleccionados": [
@@ -2005,28 +1917,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 9,
-      "topic_name": "dos células_células hijas_células sexuales_células",
-      "topic_prob": 1.0,
+      "topic_id": 10,
+      "topic_name": "reproducción_reproducción sexual_variación genética_genética",
+      "topic_prob": 0.7853529019622083,
       "topic_repr": [
-        "dos células",
-        "células hijas",
-        "células sexuales",
-        "células",
-        "genético",
-        "organismo",
-        "organismos",
-        "genética",
         "reproducción",
-        "material genético"
+        "reproducción sexual",
+        "variación genética",
+        "genética",
+        "genético",
+        "aparatos reproductores",
+        "recombinación",
+        "organismo",
+        "material genético",
+        "reproductores"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La reproducción.",
+      "concepto": "El concepto evolutivo de especie.",
       "conceptos_seleccionados": [
-        "La reproducción."
+        "El concepto evolutivo de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -2057,19 +1969,19 @@
     },
     "bertopic": {
       "topic_id": 7,
-      "topic_name": "común animales_organismos_organismo_organismos unicelulares",
+      "topic_name": "común animales_organismo_misma especie_especie",
       "topic_prob": 1.0,
       "topic_repr": [
         "común animales",
-        "organismos",
         "organismo",
-        "organismos unicelulares",
-        "tipo reproducción",
-        "especie",
         "misma especie",
+        "especie",
+        "bacterias reproducen",
         "genera",
-        "reproducción involucra",
-        "partenogénesis"
+        "células somáticas",
+        "tipo reproducción",
+        "similares progenitores",
+        "cada células"
       ]
     },
     "curriculum": {
@@ -2107,28 +2019,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 4,
-      "topic_name": "organismos_eucariotas_unicelulares_eucariota",
-      "topic_prob": 0.4221097768997581,
+      "topic_id": 1,
+      "topic_name": "especies_genoma_heterótrofa_reproducen",
+      "topic_prob": 0.9854421889649835,
       "topic_repr": [
-        "organismos",
+        "especies",
+        "genoma",
+        "heterótrofa",
+        "reproducen",
         "eucariotas",
-        "unicelulares",
         "eucariota",
+        "unicelulares",
+        "cromosomas",
         "multicelulares",
-        "unicelular",
-        "multicelular",
-        "procariotas",
-        "dos células",
-        "cromátidas"
+        "pluricelulares"
       ]
     },
     "curriculum": {
       "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción celular y su importancia.",
+      "concepto": "Ciclo celular (interfase, mitosis y meiosis).",
       "conceptos_seleccionados": [
-        "Reproducción celular y su importancia."
+        "Ciclo celular (interfase, mitosis y meiosis)."
       ],
       "criterios_seleccionados": []
     }
@@ -2159,19 +2071,19 @@
     },
     "bertopic": {
       "topic_id": 5,
-      "topic_name": "organismos_organismo_protistas unicelulares_unicelulares",
-      "topic_prob": 0.9061412576335468,
+      "topic_name": "organismo_unicelulares_dos células_protistas unicelulares",
+      "topic_prob": 0.8775828625272256,
       "topic_repr": [
-        "organismos",
         "organismo",
-        "protistas unicelulares",
         "unicelulares",
         "dos células",
+        "protistas unicelulares",
+        "produce",
+        "genética",
         "células hijas",
-        "células especializadas",
-        "células",
-        "células haploides",
-        "célula"
+        "material genético",
+        "genético",
+        "proceso meiosis"
       ]
     },
     "curriculum": {
@@ -2210,27 +2122,27 @@
     },
     "bertopic": {
       "topic_id": 5,
-      "topic_name": "organismos_organismo_protistas unicelulares_unicelulares",
-      "topic_prob": 0.944751207672283,
+      "topic_name": "organismo_unicelulares_dos células_protistas unicelulares",
+      "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
         "organismo",
-        "protistas unicelulares",
         "unicelulares",
         "dos células",
+        "protistas unicelulares",
+        "produce",
+        "genética",
         "células hijas",
-        "células especializadas",
-        "células",
-        "células haploides",
-        "célula"
+        "material genético",
+        "genético",
+        "proceso meiosis"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La reproducción sexual.",
+      "concepto": "Reproducción celular y su importancia.",
       "conceptos_seleccionados": [
-        "La reproducción sexual."
+        "Reproducción celular y su importancia."
       ],
       "criterios_seleccionados": []
     }
@@ -2260,28 +2172,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 9,
-      "topic_name": "dos células_células hijas_células sexuales_células",
+      "topic_id": 10,
+      "topic_name": "reproducción_reproducción sexual_variación genética_genética",
       "topic_prob": 1.0,
       "topic_repr": [
-        "dos células",
-        "células hijas",
-        "células sexuales",
-        "células",
-        "genético",
-        "organismo",
-        "organismos",
-        "genética",
         "reproducción",
-        "material genético"
+        "reproducción sexual",
+        "variación genética",
+        "genética",
+        "genético",
+        "aparatos reproductores",
+        "recombinación",
+        "organismo",
+        "material genético",
+        "reproductores"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La reproducción sexual.",
+      "concepto": "División de células sexuales.",
       "conceptos_seleccionados": [
-        "La reproducción sexual."
+        "División de células sexuales."
       ],
       "criterios_seleccionados": []
     }
@@ -2312,27 +2224,27 @@
     },
     "bertopic": {
       "topic_id": 7,
-      "topic_name": "común animales_organismos_organismo_organismos unicelulares",
+      "topic_name": "común animales_organismo_misma especie_especie",
       "topic_prob": 1.0,
       "topic_repr": [
         "común animales",
-        "organismos",
         "organismo",
-        "organismos unicelulares",
-        "tipo reproducción",
-        "especie",
         "misma especie",
+        "especie",
+        "bacterias reproducen",
         "genera",
-        "reproducción involucra",
-        "partenogénesis"
+        "células somáticas",
+        "tipo reproducción",
+        "similares progenitores",
+        "cada células"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "La reproducción asexual.",
+      "concepto": "El material genético.",
       "conceptos_seleccionados": [
-        "La reproducción asexual."
+        "El material genético."
       ],
       "criterios_seleccionados": []
     }
@@ -2363,30 +2275,22 @@
     },
     "bertopic": {
       "topic_id": 5,
-      "topic_name": "organismos_organismo_protistas unicelulares_unicelulares",
+      "topic_name": "organismo_unicelulares_dos células_protistas unicelulares",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
         "organismo",
-        "protistas unicelulares",
         "unicelulares",
         "dos células",
+        "protistas unicelulares",
+        "produce",
+        "genética",
         "células hijas",
-        "células especializadas",
-        "células",
-        "células haploides",
-        "célula"
+        "material genético",
+        "genético",
+        "proceso meiosis"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 8: Vida en Transformación",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Evidencias evolutivas.",
-      "conceptos_seleccionados": [
-        "Evidencias evolutivas."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "4.1",
@@ -2413,31 +2317,23 @@
       ]
     },
     "bertopic": {
-      "topic_id": 3,
-      "topic_name": "organismos procariotas_organismos unicelulares_organismos_dos células",
+      "topic_id": 2,
+      "topic_name": "organismos procariotas_heterótrofa_cromosoma bacteriano_invertebrados",
       "topic_prob": 1.0,
       "topic_repr": [
         "organismos procariotas",
-        "organismos unicelulares",
-        "organismos",
-        "dos células",
-        "unicelulares",
-        "ribosómico",
+        "heterótrofa",
         "cromosoma bacteriano",
-        "microorganismos",
-        "bacterias",
-        "invertebrados"
+        "invertebrados",
+        "tres grupos",
+        "mayoría unicelular",
+        "clasificación",
+        "cromosoma",
+        "autótrofos heterótrofos",
+        "depredadores"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción en procariotas.",
-      "conceptos_seleccionados": [
-        "Reproducción en procariotas."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "4.2",
@@ -2464,31 +2360,23 @@
       ]
     },
     "bertopic": {
-      "topic_id": 9,
-      "topic_name": "dos células_células hijas_células sexuales_células",
-      "topic_prob": 0.4756034069216759,
+      "topic_id": 10,
+      "topic_name": "reproducción_reproducción sexual_variación genética_genética",
+      "topic_prob": 1.0,
       "topic_repr": [
-        "dos células",
-        "células hijas",
-        "células sexuales",
-        "células",
-        "genético",
-        "organismo",
-        "organismos",
-        "genética",
         "reproducción",
-        "material genético"
+        "reproducción sexual",
+        "variación genética",
+        "genética",
+        "genético",
+        "aparatos reproductores",
+        "recombinación",
+        "organismo",
+        "material genético",
+        "reproductores"
       ]
     },
-    "curriculum": {
-      "tema": "Tema 8: Vida en Transformación",
-      "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Procesos que generan diversidad biológica.",
-      "conceptos_seleccionados": [
-        "Procesos que generan diversidad biológica."
-      ],
-      "criterios_seleccionados": []
-    }
+    "curriculum": null
   },
   {
     "codigo": "5.1",
@@ -2516,27 +2404,27 @@
     },
     "bertopic": {
       "topic_id": 5,
-      "topic_name": "organismos_organismo_protistas unicelulares_unicelulares",
-      "topic_prob": 1.0,
+      "topic_name": "organismo_unicelulares_dos células_protistas unicelulares",
+      "topic_prob": 0.5700196660178996,
       "topic_repr": [
-        "organismos",
         "organismo",
-        "protistas unicelulares",
         "unicelulares",
         "dos células",
+        "protistas unicelulares",
+        "produce",
+        "genética",
         "células hijas",
-        "células especializadas",
-        "células",
-        "células haploides",
-        "célula"
+        "material genético",
+        "genético",
+        "proceso meiosis"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de protistas.",
+      "concepto": "Reproducción celular y su importancia.",
       "conceptos_seleccionados": [
-        "Reproducción de protistas."
+        "Reproducción celular y su importancia."
       ],
       "criterios_seleccionados": []
     }
@@ -2566,28 +2454,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
+      "topic_id": 6,
+      "topic_name": "plantas organismos_plantas reproducción_plantas_plantas flores",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
-        "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
+        "plantas organismos",
+        "plantas reproducción",
         "plantas",
-        "dan origen",
+        "plantas flores",
+        "planta",
+        "genera",
         "pluricelulares",
-        "multicelular",
-        "origen"
+        "tipo reproducción",
+        "embrión",
+        "fecundación formación"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de hongos.",
+      "concepto": "División de células sexuales.",
       "conceptos_seleccionados": [
-        "Reproducción de hongos."
+        "División de células sexuales."
       ],
       "criterios_seleccionados": []
     }
@@ -2617,28 +2505,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
-      "topic_prob": 0.9128259879382853,
+      "topic_id": 6,
+      "topic_name": "plantas organismos_plantas reproducción_plantas_plantas flores",
+      "topic_prob": 0.8166749503619538,
       "topic_repr": [
-        "organismos",
-        "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
+        "plantas organismos",
+        "plantas reproducción",
         "plantas",
-        "dan origen",
+        "plantas flores",
+        "planta",
+        "genera",
         "pluricelulares",
-        "multicelular",
-        "origen"
+        "tipo reproducción",
+        "embrión",
+        "fecundación formación"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de hongos.",
+      "concepto": "El concepto filogenético de especie.",
       "conceptos_seleccionados": [
-        "Reproducción de hongos."
+        "El concepto filogenético de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -2668,28 +2556,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 0,
-      "topic_name": "organismos_especies_grupo pertenecen_caracteriza",
+      "topic_id": 6,
+      "topic_name": "plantas organismos_plantas reproducción_plantas_plantas flores",
       "topic_prob": 1.0,
       "topic_repr": [
-        "organismos",
-        "especies",
-        "grupo pertenecen",
-        "caracteriza",
-        "alternancia generaciones",
+        "plantas organismos",
+        "plantas reproducción",
         "plantas",
-        "dan origen",
+        "plantas flores",
+        "planta",
+        "genera",
         "pluricelulares",
-        "multicelular",
-        "origen"
+        "tipo reproducción",
+        "embrión",
+        "fecundación formación"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 2: Explorando la Vida Celular",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de plantas.",
+      "concepto": "Reproducción celular y su importancia.",
       "conceptos_seleccionados": [
-        "Reproducción de plantas."
+        "Reproducción celular y su importancia."
       ],
       "criterios_seleccionados": []
     }
@@ -2709,28 +2597,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 2,
-      "topic_name": "evolutivo_cladogramas_parentesco_invertebrados",
+      "topic_id": 4,
+      "topic_name": "invertebrados_gusanos_insectos_poríferos",
       "topic_prob": 1.0,
       "topic_repr": [
-        "evolutivo",
-        "cladogramas",
-        "parentesco",
         "invertebrados",
-        "relaciones parentesco",
         "gusanos",
-        "características",
-        "grupos",
-        "pertenecen grupo",
-        "reptiles"
+        "insectos",
+        "poríferos",
+        "reptiles",
+        "esponjas",
+        "esponja",
+        "evolutivo",
+        "moluscos",
+        "glándulas"
       ]
     },
     "curriculum": {
-      "tema": "Tema 4: Diversidad de los Seres Vivos",
+      "tema": "Tema 4: Preservando la Biodiversidad",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Animales invertebrados.",
+      "concepto": "Filo cordados: animales cordados.",
       "conceptos_seleccionados": [
-        "Animales invertebrados."
+        "Filo cordados: animales cordados."
       ],
       "criterios_seleccionados": []
     }
@@ -2760,28 +2648,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 8,
-      "topic_name": "mamíferos_organismos_vertebrados_poríferos",
-      "topic_prob": 0.6054919669134469,
+      "topic_id": 9,
+      "topic_name": "células espermáticas_hermafroditas reproducción_reproducción sexual_reproducción",
+      "topic_prob": 0.6275043552645844,
       "topic_repr": [
-        "mamíferos",
-        "organismos",
-        "vertebrados",
-        "poríferos",
-        "especies",
-        "gusanos",
-        "especie",
-        "reptiles",
-        "reptiles aves",
-        "hermafroditas reproducción"
+        "células espermáticas",
+        "hermafroditas reproducción",
+        "reproducción sexual",
+        "reproducción",
+        "embrión",
+        "reproducción asexual",
+        "espermáticas",
+        "fecundación interna",
+        "fecundación",
+        "fecundación externa"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 4: Preservando la Biodiversidad",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de animales invertebrados.",
+      "concepto": "Animales invertebrados.",
       "conceptos_seleccionados": [
-        "Reproducción de animales invertebrados."
+        "Animales invertebrados."
       ],
       "criterios_seleccionados": []
     }
@@ -2811,28 +2699,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 8,
-      "topic_name": "mamíferos_organismos_vertebrados_poríferos",
+      "topic_id": 9,
+      "topic_name": "células espermáticas_hermafroditas reproducción_reproducción sexual_reproducción",
       "topic_prob": 1.0,
       "topic_repr": [
-        "mamíferos",
-        "organismos",
-        "vertebrados",
-        "poríferos",
-        "especies",
-        "gusanos",
-        "especie",
-        "reptiles",
-        "reptiles aves",
-        "hermafroditas reproducción"
+        "células espermáticas",
+        "hermafroditas reproducción",
+        "reproducción sexual",
+        "reproducción",
+        "embrión",
+        "reproducción asexual",
+        "espermáticas",
+        "fecundación interna",
+        "fecundación",
+        "fecundación externa"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de vertebrados.",
+      "concepto": "El concepto evolutivo de especie.",
       "conceptos_seleccionados": [
-        "Reproducción de vertebrados."
+        "El concepto evolutivo de especie."
       ],
       "criterios_seleccionados": []
     }
@@ -2862,28 +2750,28 @@
       ]
     },
     "bertopic": {
-      "topic_id": 8,
-      "topic_name": "mamíferos_organismos_vertebrados_poríferos",
+      "topic_id": 9,
+      "topic_name": "células espermáticas_hermafroditas reproducción_reproducción sexual_reproducción",
       "topic_prob": 1.0,
       "topic_repr": [
-        "mamíferos",
-        "organismos",
-        "vertebrados",
-        "poríferos",
-        "especies",
-        "gusanos",
-        "especie",
-        "reptiles",
-        "reptiles aves",
-        "hermafroditas reproducción"
+        "células espermáticas",
+        "hermafroditas reproducción",
+        "reproducción sexual",
+        "reproducción",
+        "embrión",
+        "reproducción asexual",
+        "espermáticas",
+        "fecundación interna",
+        "fecundación",
+        "fecundación externa"
       ]
     },
     "curriculum": {
-      "tema": "Tema 5: Reproducción y Ciclos de Vida",
+      "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía",
       "seccion": "Sección 1: La Vida en sus Niveles y Transformaciones",
-      "concepto": "Reproducción de vertebrados.",
+      "concepto": "El concepto evolutivo de especie.",
       "conceptos_seleccionados": [
-        "Reproducción de vertebrados."
+        "El concepto evolutivo de especie."
       ],
       "criterios_seleccionados": []
     }

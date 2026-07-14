@@ -21,13 +21,15 @@ Realiza una búsqueda semántica sobre el corpus indexado en Qdrant.
 |-------|------|-----------|---------|-------------|
 | `text` | `string` | ✅ | — | Texto de la consulta |
 | `n_results` | `int` | ❌ | `5` | Cantidad de resultados a devolver |
+| `min_score` | `float` | ❌ | `0.0` | Score mínimo de similitud (0.0–1.0) para filtrar resultados |
 
 **Ejemplo de request:**
 
 ```json
 {
   "text": "¿Cuáles son las fases de la mitosis?",
-  "n_results": 3
+  "n_results": 3,
+  "min_score": 0.7
 }
 ```
 
@@ -78,6 +80,7 @@ Realiza una búsqueda semántica sobre el corpus indexado en Qdrant.
 | Código | Detalle |
 |--------|---------|
 | `400` | `"Texto de consulta vacío"` — cuando `text` está vacío o solo contiene espacios |
+| `400` | `"No hay resultados que cumplan el umbral mínimo de similitud"` — cuando no hay resultados con score ≥ min_score |
 
 ---
 
@@ -105,7 +108,71 @@ Health check del servicio. Verifica conexión con Qdrant y estado de la colecci�
 
 ---
 
-### `GET /api/rag/admin/info`
+### `POST /api/rag/query-by-tema-and-subtema`
+
+Obtiene documentos filtrados por tema curricular y agrupados por subtema (concepto seleccionado).
+
+**Request Body:**
+
+| Campo | Tipo | Requerido | Descripción |
+|-------|------|-----------|-------------|
+| `tema` | `string` | ✅ | Tema curricular exacto (ej: `"Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)"`) |
+| `subtemas` | `string[]` | ✅ | Lista de conceptos seleccionados a buscar dentro del tema |
+
+**Ejemplo de request:**
+```json
+{
+  "tema": "Tema 1: La Complejidad de la Vida: Niveles de Taxonomía (pág. 6)",
+  "subtemas": ["Aportes de Carlos Linneo a la clasificación", "Sistema de clasificación taxonómica"]
+}
+```
+
+**Response (`200 OK`):** `List[SubtemaDocumentos]`
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `subtema` | `string` | Concepto seleccionado |
+| `documentos` | `DocumentoItem[]` | Documentos que matchean ese subtema |
+
+**`DocumentoItem`:**
+
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `id` | `string` | UUID del punto en Qdrant |
+| `document` | `string` | Texto completo del fragmento |
+
+**Ejemplo de response:**
+```json
+[
+  {
+    "subtema": "Aportes de Carlos Linneo",
+    "documentos": [
+      {
+        "id": "09f21311-...",
+        "document": "1.3 La nomenclatura linneana\nResumen: ..."
+      }
+    ]
+  },
+  {
+    "subtema": "Sistema de clasificación taxonómica",
+    "documentos": []
+  }
+]
+```
+
+**Comportamiento:**
+- Filtra documentos donde `curriculum_tema` coincida exactamente con el `tema` proporcionado.
+- Dentro de ese filtro, busca documentos cuyos `curriculum_conceptos_seleccionados` contengan al menos uno de los `subtemas`.
+- Cada documento se asigna al **primer** subtema que coincida (no se repite entre grupos).
+
+**Errores:**
+
+| Código | Detalle |
+|--------|---------|
+| `400` | `"Tema vacío"` — cuando `tema` está vacío |
+| `400` | `"Lista de subtemas vacía"` — cuando `subtemas` está vacío |
+
+---### `GET /api/rag/admin/info`
 
 Endpoint de administración que devuelve información de diagnóstico del sistema.
 
@@ -177,12 +244,33 @@ batch_size: int = 100             — Tamaño de lote para upsert
 
 > **Nota para IA:** `LoadRequest` se usa internamente para la función `run_load_task()` en background, pero no hay un endpoint público que lo exponga actualmente.
 
+### `TemaQueryRequest`
+
+```
+tema: str              — Tema curricular exacto
+subtemas: List[str]    — Conceptos seleccionados a buscar
+```
+
+### `DocumentoItem`
+
+```
+id: str          — UUID del punto en Qdrant
+document: str    — Texto completo del fragmento
+```
+
+### `SubtemaDocumentos`
+
+```
+subtema: str                  — Concepto seleccionado
+documentos: List[DocumentoItem] — Documentos que matchean ese subtema
+```
+
 ---
 
 ## Última revisión
 
-- **Fecha:** 2026-05-24
-- **Commit:** `5cfbd82`
+- **Fecha:** 2026-06-08
+- **Commit:** `af19733`
 
 ## Instrucciones para actualizar este doc
 

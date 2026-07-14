@@ -13,19 +13,48 @@ services:
 
   rag-api:
     build: .
-    container_name: rag-api
+    container_name: rag-ms
     command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     #ports:
     #  - "127.0.0.1:8002:8000"
+
+
+    cap_drop:
+      - ALL
+    
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 512M
+        reservations:
+          cpus: '1'
+          memory: 256M
+
+    security_opt:
+      - no-new-privileges:true
+    
+    user: "1001:1001"
+
+
+
     environment:
       - QDRANT_HOST=qdrant-server
       - QDRANT_PORT=6333
       - COLLECTION_NAME=rag_biologia
-      - ADMIN_API_KEY=mi-clave-secreta-para-cargar-datos
+      # Para desarrollo local (fallback)
+      - DB_HOST=host.docker.internal
+      - DB_PORT=5432
+      - DB_NAME=edu_llm
+      - DB_USER=admin
+      - DB_PASSWORD=admin
     volumes:
       - .:/app                   
       - ./logs:/app/logs
       - ./config.yml:/app/config.yml
+      - ./corpus:/corpus
     depends_on:
       - qdrant-server
     restart: unless-stopped

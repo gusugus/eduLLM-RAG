@@ -1,18 +1,24 @@
 # api/routes.py
 from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks, Header
-from core.models import QueryRequest, ResultItem
+from core.models import QueryRequest, ResultItem, TemaSubtemas, TemaQueryRequest, SubtemaQueryRequest, DocumentoItem, SubtemaDocumentos
 from services.embedding_service import EmbeddingService
 from services.qdrant_service import QdrantService
 from services.indexer_service import IndexerService
-from loguru import logger
-from typing import List, Optional
+from typing import List, Optional, Dict
 from pathlib import Path
 from pydantic import BaseModel
 import os
 from fastapi import Header, HTTPException, status
 from core.config import settings  # Importar settings directamente
+from qdrant_client.models import Filter, FieldCondition, MatchValue, MinShould
+import logging
+from typing import List, Dict, Set
+from fastapi import Depends, HTTPException
 
 router = APIRouter()
+
+logger = logging.getLogger(__name__)
+
 
 # Obtener raíz del proyecto buscando main.py
 def get_project_root():
@@ -32,7 +38,8 @@ class LoadRequest(BaseModel):
     batch_size: int = 100
 
 # API Key para proteger el endpoint (configurable por variable de entorno)
-API_KEY = os.getenv("ADMIN_API_KEY", "mi-clave-secreta-para-cargar-datos")
+API_KEY = os.getenv("ADMIN_API_KEY", "")
+
 
 # Dependencias
 def get_embedding_service():
@@ -64,13 +71,19 @@ async def query_rag(
     query_vector = embedder.embed_one(request.text)
     results = qdrant.search(vector=query_vector, limit=request.n_results)
 
+    filtered_results = [r for r in results if r.score >= request.min_score]
+
+    if not filtered_results:
+        logger.warning(f"No hay resultados que cumplan el umbral mínimo de similitud (min_score={request.min_score})")
+        raise HTTPException(status_code=400, detail="No hay resultados que cumplan el umbral mínimo de similitud")
+
     return [
         ResultItem(
             id=str(r.id),
             document=r.payload.get("document", ""),
             metadata={k: v for k, v in r.payload.items() if k != "document"},
             score=r.score
-        ) for r in results
+        ) for r in filtered_results
     ]
 
 @router.get("/health")
@@ -82,33 +95,84 @@ async def health(qdrant: QdrantService = Depends(get_qdrant_service)):
         "points": info.points_count
     }
 
-@router.get("/admin/info")
-async def admin_info(
-    x_api_key: Optional[str] = Header(None, alias="X-API-Key")  # ← Opcional
-):
-    """
-    if not x_api_key or x_api_key != API_KEY:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="API key inválida o no proporcionada"
+@router.get("/temas", response_model=List[TemaSubtemas])
+async def listar_temas(qdrant: QdrantService = Depends(get_qdrant_service)):
+    records = qdrant.scroll_all()
+    temas_dict: Dict[str, set] = {}
+    for r in records:
+        tema = r.payload.get("curriculum_tema", "") or ""
+        conceptos = r.payload.get("curriculum_conceptos_seleccionados", []) or []
+        if not tema:
+            continue
+        if tema not in temas_dict:
+            temas_dict[tema] = set()
+        for c in conceptos:
+            if c:
+                temas_dict[tema].add(c)
+    return [
+        TemaSubtemas(tema=t, subtemas=sorted(list(s)))
+        for t, s in sorted(temas_dict.items())
+    ]
+
+
+
+
+@router.post("/query-by-subtema", response_model=List[SubtemaDocumentos])
+async def query_by_subtema(
+    request: SubtemaQueryRequest,
+    qdrant: QdrantService = Depends(get_qdrant_service) ):
+    try:
+        if not request.subtemas:
+            raise HTTPException(status_code=400, detail="Lista de subtemas vacía")
+
+        filter_obj = Filter(
+            should=[
+                FieldCondition(key="curriculum_conceptos_seleccionados", match=MatchValue(value=sub))
+                for sub in request.subtemas
+            ],
+            min_should=MinShould(
+            conditions=[
+                FieldCondition(key="curriculum_conceptos_seleccionados", match=MatchValue(value=sub))
+                for sub in request.subtemas
+            ],
+            min_count=1
         )
-    """
-    qdrant_service = get_qdrant_service()
-    collection_info = qdrant_service.get_collection_info()
-    
-    return {
-        "project_root": str(PROJECT_ROOT),
-        "qdrant": {
-            "host": settings.qdrant_host,
-            "port": settings.qdrant_port,
-            "collection": qdrant_service.collection_name,
-            "points_count": collection_info.points_count
-        },
-        "default_corpus": {
-            "path": str(PROJECT_ROOT / "corpus" / "secciones_completas.json"),
-            "exists": (PROJECT_ROOT / "corpus" / "secciones_completas.json").exists()
-        }
-    }
+        )
+
+        records = qdrant.scroll_with_filter(filter_obj)
+
+        subtema_docs: Dict[str, list] = {sub: [] for sub in request.subtemas}
+        assigned_ids: Set[str] = set()
+
+        for point in records:
+            doc_id = str(point.id)
+            if doc_id in assigned_ids:
+                continue
+
+            concepts = point.payload.get("curriculum_conceptos_seleccionados", []) or []
+            for sub in request.subtemas:
+                if sub in concepts:
+                    subtema_docs[sub].append(DocumentoItem(
+                        id=doc_id,
+                        document=point.payload.get("document", "")
+                    ))
+                    assigned_ids.add(doc_id)
+                    break
+
+        return [
+            SubtemaDocumentos(subtema=sub, documentos=subtema_docs[sub])
+            for sub in request.subtemas
+        ]
+
+    except HTTPException as http_exc:
+        # Relanzar las HTTPException que nosotros mismos creamos (como la de subtemas vacíos)
+        raise http_exc
+    except Exception as e:
+        logger.error(f"Error en query-by-subtema: {e}", exc_info=True)
+        raise HTTPException(
+            status_code=500,
+            detail="Error interno al consultar los documentos por subtema"
+        )
 
 # ============ FUNCIÓN DE BACKGROUND ============
 
